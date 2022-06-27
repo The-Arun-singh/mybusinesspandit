@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.navbar {
+nav {
     background-color: rgb(25, 3, 66);
     position: sticky;
     display: flex;
@@ -35,6 +35,12 @@ img {
     text-decoration: none;
     color: #fff;
 
+}
+
+.nav-list li ion-icon {
+    position: relative;
+    top: 4px;
+    font-weight: bold;
 }
 
 .right-nav {
