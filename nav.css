@@ -74,10 +74,15 @@ img {
     text-transform: capitalize;
 }
 
+.sublist-1 li a {
+    color: black;
+}
+
 .nav-list li:hover {
     background-color: blue;
 }
-
+    
 .list-1:hover .sublist-1 {
     display: block;
+    
 }
