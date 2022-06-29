@@ -62,3 +62,23 @@ img {
     text-decoration: none;
     color:#fff
 }
+
+.sublist-1 {
+    position: absolute;
+    background-color: lightblue;
+    display: none;    
+}
+
+.sublist-1 li {
+    border: 1px solid #fff;
+    text-transform: capitalize;
+}
+
+.nav-list li:hover {
+    background-color: blue;
+}
+
+.list-1:hover .sublist-1 {
+    /* display: unset; */
+    display: block;
+}
