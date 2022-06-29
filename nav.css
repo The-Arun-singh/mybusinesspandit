@@ -79,6 +79,5 @@ img {
 }
 
 .list-1:hover .sublist-1 {
-    /* display: unset; */
     display: block;
 }
