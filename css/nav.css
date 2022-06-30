@@ -19,7 +19,6 @@
 .contact-list {
     display: flex;
     margin: 1px 30px;
-    /* justify-content: center; */
 }
 
 .social-list {
@@ -32,6 +31,10 @@
     padding: 0 10px;
     font-size: 17px;
     font-weight: 500;
+}
+
+.contact-list li a, .social-list li a {
+    color: #000;
 }
 
 .social-list li {
