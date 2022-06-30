@@ -1,0 +1,163 @@
+:root {
+    --background-color: #16163f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-and-social {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 40px;
+}
+
+
+.contact-list {
+    display: flex;
+    margin: 1px 30px;
+    /* justify-content: center; */
+}
+
+.social-list {
+    margin: 1px 30px;
+    display: flex;
+}
+
+.contact-list li {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.social-list li {
+    padding: 0 5px;
+    list-style: none;
+    font-size: larger;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    height: 6em;
+    background-color: #16163f;
+}
+
+.logo {
+    width: 10%;
+    height: 100%;
+    display: inline;
+    text-align: center;
+}
+
+.list {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.logo_img {
+    width: 90%;
+    height: 95%;
+    border: 2px solid var(--background-color);
+    border-radius: 50%;
+}
+
+.list li {
+    list-style: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 4px 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.list li:hover {
+    border-radius: 4px;
+    background-color: #fff;
+    color: var(--background-color);
+}
+
+.list li:hover> a {
+    background-color: #fff;
+    color: var(--background-color);
+}
+
+.list li a:hover {
+    background-color: #fff;
+    color: var(--background-color);
+}
+
+.list li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.sublist li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--background-color);
+}
+
+.sublist {
+    border-radius: 4px;
+    position: absolute;
+    display: none;
+    top:72px;
+}
+
+.sublist li {
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-bottom: 1px solid var(--background-color);
+    border-radius: 4px;
+    padding: 10px 10px;
+}
+
+.list li:hover> .sublist {
+    display: block;
+}
+
+.sublist li:hover {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: var(--background-color);
+    color: #fff;
+}
+
+.sublist li:hover a {
+    color: #fff;
+    background-color: var(--background-color);
+}
+
+.btn a {
+    padding: 3px;
+    margin: 3px;
+    border: 3px solid var(--background-color);
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--background-color);
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover a {
+    box-shadow: 0px 0px 5px 1px #fff;
+}
