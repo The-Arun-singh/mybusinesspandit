@@ -1,0 +1,285 @@
+:root {
+    --color: #16163f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================HEADER========================== */
+
+/* ----------header contact and social-------- */
+.contact-and-social {
+    height: 25px;
+    width: 80%;
+    margin: 3px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-list, .social-list {
+    list-style: none;
+    display: flex;
+}
+.contact-list li a, .social-list li a {
+    color: var(--color);
+    padding: 0 7px;
+    text-decoration: none;
+}
+.icon {
+    font-size: large;
+    margin: 2px 0 0 0;
+}
+/* ----------header contact and social-------- */
+
+/* ----------header navbar----------- */
+.navbar {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color);
+}
+
+.logo_img {
+    width: 12vh;
+    border: 2px solid black;
+    border-radius: 50%;
+    
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: var(--color);
+}
+.list li, .list li a, .sublist li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    margin: auto;
+    padding: 6px 6px 6px 0;
+    border-radius: 4px;
+}
+.list li {
+    border-bottom: 2px solid var(--color);
+}
+.list li a {
+    padding: 0 0 0 8px;
+}
+
+.sublist {
+    display: none;
+    top: 9vh;
+}
+.sublist li {
+    border-bottom: 2px solid var(--color);
+    background-color: #fff;
+    border-radius: 4px;
+    margin: auto;
+    padding: 6px;
+}
+.sublist li a {
+    text-decoration: none;
+    border-radius: 4px;
+    color: var(--color);
+    margin: auto;
+}
+
+/* -----hover effect--------- */
+.list li:hover .sublist {
+    position: absolute;
+    display: block;
+}
+.list li:hover, .list li:hover a {
+    background-color: #fff;
+    color: var(--color);
+}
+.sublist li:hover, .sublist li:hover a {
+    background-color: var(--color);
+    color: #fff;
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px 2px #fff;
+}
+.btn:hover a ion-icon {
+    transform: scale(1.1);
+}
+/* -----hover effect--------- */
+
+.btn {
+    width: 9%;
+    margin: auto 0;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 3px;
+    background-color: #fff;
+}
+.btn a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------header navbar----------- */
+/* ===========================HEADER========================== */
+
+
+/* =======================FOOTER============================ */
+
+footer {
+    position:absolute;
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--color);
+    text-transform: capitalize;
+}
+footer hr {
+    width: 98%;
+    margin: auto;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 0 0 5% 0;
+}
+.logo-footer {
+    width: 120px;
+    height: 60px;
+    border-radius: 5px;
+}
+.text-footer {
+    color: #fff;
+    margin: 10px 0 0 0;
+    display:block;
+    padding: 5%;
+    text-align: left;
+}
+.social-footer-list {
+    margin: 10px 0 0 10px;
+    text-align: left;
+}
+.social-footer-list li {
+    color: #fff;
+    list-style: none;
+    display: inline;
+    padding: 5px;
+}
+.footer-icon {
+    color: #fff;
+    font-size: 24px;
+}
+
+.left-footer {
+    width: 25%;
+}
+
+
+.mid-footer {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mid-footer h3, .cta h3 {
+    font-size: 24px;
+    margin: 0 5px 10px;
+    color: #fff;
+}
+.mid-footer p, .mid-footer li, .mid-footer li a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    padding: 4px 0;
+}
+.contact-footer p {
+    text-align: left;
+    padding: 0 0 0 8px;
+}
+.contact-footer hr {
+    width: 70%;
+    margin-left: 0;
+}
+.nav-footer {
+    width: 40%;
+}
+.contact-footer h3 {
+    text-align: left;
+}
+
+.nav-list {
+    padding: 1px 10px;
+} 
+
+
+.cta {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.btn-lrg, .cta input {
+    width: 90%;
+    font-size: 14px;
+    padding: 7px;
+    border-radius: 5px;
+}
+.btn-lrg {
+    width: 95%;
+    color: var(--color);
+}
+.btn-lrg:hover, .cta input:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 3px 3px rgb(55, 72, 255, 0.3);
+    text-shadow: 0 0 0.5px var(--color);
+}
+
+
+
+.copyright {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+.copyright a {
+    text-decoration: none;
+    color: rgb(55, 72, 255);
+}
+.copyright a:hover {
+    text-shadow: 0 0 1px var(--color);
+}
+
+
+/* =======================FOOTER============================ */
+@media (max-width : 700px) {
+    .social-list {
+        display: none;
+    }
+    .contact-list {
+        margin: auto;
+    }
+    .list {
+        display: none;
+    }
+    .btn {
+        width: 20%;
+        padding: 6px;
+    }
+    .footer {
+        display: block;
+    }
+}
