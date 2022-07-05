@@ -32,12 +32,14 @@
     margin: 2px 0 0 0;
 }
 /* ----------header contact and social-------- */
+/* ===========================HEADER========================== */
 
-/* ----------header navbar----------- */
+/* ----------navbar----------- */
 .navbar {
     position: sticky;
     top: 0px;
-    width: 100%;
+    padding: 2px 20px;
+    width: 98%;
     height: 13vh;
     display: flex;
     justify-content: space-between;
@@ -118,7 +120,7 @@
     width: 9%;
     margin: auto 0;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid transparent;
     border-radius: 20px;
     padding: 3px;
     background-color: #fff;
@@ -132,8 +134,7 @@
     justify-content: center;
 }
 
-/* ----------header navbar----------- */
-/* ===========================HEADER========================== */
+/* ----------navbar----------- */
 
 
 /* =======================FOOTER============================ */

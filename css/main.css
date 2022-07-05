@@ -1,0 +1,101 @@
+:root {
+    --color: #16163f;
+}
+
+a {
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* =============================================================== */
+
+.main {
+    background-color: rgb(163, 255, 144);
+    /* width: 100%; */
+    /* display: flex; */
+}
+
+
+
+.container {
+    background-color: rgb(0, 128, 255);
+    margin: 2%;
+    /* position: relative; */
+    /* overflow: hidden; */
+    width: 40%;
+    /* height: 100vh;   */
+}
+.slider {
+    background-color: rgb(19, 95, 69);
+    margin: 2%;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;*/ 
+    width: 1400%;
+    /* height: 50%;
+    float: left;  */
+}
+.slide {
+    background-color: rgb(255, 219, 175);
+    margin: 2%;
+    /* width: 14.2%;
+    height: 100%; */
+    /* float: left; */
+}
+
+.caption {
+    background-color: rgb(87, 174, 186);
+    margin: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider button {
+    background-color: var(--color);
+    border: 2px solid transpare;
+    border-radius: 50px;
+    margin: 5px 0;
+    padding: 4px 9px;
+}
+.slider button:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 5px 2px var(--color);
+}
+
+
+.illustration {
+    background-color: aqua;
+    width: 60%;
+    margin: 0 0 0 auto;
+}
+.illustration img {
+    background-color: bisque;
+    width: 100%;
+}
