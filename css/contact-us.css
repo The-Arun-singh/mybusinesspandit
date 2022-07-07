@@ -1,0 +1,94 @@
+main {
+    position: relative;
+    inset: 0;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../media/about-bg-2.jpg);
+    background-size: cover;
+}
+
+main h1 {
+    position: relative;
+    text-align: center;
+    top: 20%;
+    font-size: 42px;
+}
+
+
+/* ========================================================= */
+
+article {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article h2 {
+    font-size: 38px;
+    padding: 10px;
+    color: var(--color);
+    border-bottom: 2px solid #6ec1e4;
+}
+.sec {
+    height: 80%;
+    width: 40%;
+    padding-left: 12%;
+    padding-top: 5%;
+}
+.sec ul li {
+    list-style: none;
+    margin-top: 25px;
+}
+.sec ul li a {
+    text-decoration: none;
+    border-bottom: 2px solid #2386b1;
+    color: var(--color);
+    font-size: 24px; 
+    font-weight: bold;
+    
+}
+.sec ul li a:hover {
+    color: black;
+    border-color: black;
+}
+
+
+.aside {
+    height: 80%;
+    width: 40%;
+    border: 4px solid transparent;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px var(--color);
+    padding: 10px 10px;
+    margin: 20px;
+
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+.wrapper input, .wrapper button {
+    font-size: 16px;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 5px;
+}
+.wrapper p {
+    padding: 5px;
+}
+.wrapper span {
+    display: flex;
+    justify-content: space-around;
+}
+#message {
+    height: 140px;
+    margin: 10px;
+}
+.wrapper button {
+    background-color: var(--color);
+    color: #fff;
+}

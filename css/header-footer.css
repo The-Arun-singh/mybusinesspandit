@@ -44,6 +44,7 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--color);
+    z-index: 1;
 }
 
 .logo_img {
@@ -152,6 +153,7 @@ footer hr {
 }
 
 
+
 .footer {
     display: flex;
     justify-content: space-evenly;
@@ -224,6 +226,13 @@ footer hr {
 .nav-list {
     padding: 1px 10px;
 } 
+.nav-list li a {
+    border-bottom: 1px solid transparent;
+    transition: 0.5s
+}
+.nav-list li a:hover {
+    border-bottom: 1px solid #fff;
+}
 
 
 .cta {
