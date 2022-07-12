@@ -121,7 +121,7 @@
     width: 9%;
     margin: auto 0;
     text-align: center;
-    border: 2px solid transparent;
+    border: 2px solid var(--color);
     border-radius: 20px;
     padding: 3px;
     background-color: #fff;
