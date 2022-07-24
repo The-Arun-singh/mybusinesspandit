@@ -1,0 +1,109 @@
+/* =====================================BANNER START============================= */
+
+main {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.banner {
+    width: 60vw;
+}
+.overlay {
+    position: absolute;
+    background-color: hsl(240, 48%, 17%, .9);
+    top: 14vh;
+    left: 0px;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    height: 100%;
+    background: url('../../media/220-SM938837.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.banner h1 {
+    width: 50%;
+    color: #ffffff;
+    font-size: 77px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1em;
+    text-align: center;
+}
+.banner img {
+    width: 20%;
+    opacity:unset;
+    background-color: black;
+}
+
+
+
+/* =====================================BANNER START============================= */
+
+
+/* ======================================ENQUIRY START============================= */
+
+.enquiry form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 50px;
+}
+.enquiry h2 {
+    color: #16163F;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.enquiry hr {
+    width: 20%;
+    background-color: #16163F;
+    height: 0.5px;
+    border-color: transparent;
+}
+.enquiry p {
+    color:#7A7A7A;
+    margin: 10px 0;
+}
+.label, label {
+    font-size: 13px;
+    font-weight: 700;
+    color:#7A7A7A;
+    margin-bottom: 3px;
+}
+.label::after {
+    content: '*';
+    color: red;
+    margin: 0 3px;
+}
+#Services {
+    font-size: 13px;
+    font-weight: 700;
+    color:#7A7A7A;
+}
+input, #Services {
+    font-size: 13px;
+    padding: 6px 12px;
+    margin-bottom: 13px;
+    border: 1px solid #818a91;
+    border-radius: 2px;
+}
+input:focus {
+    outline: none;
+    border: 1px solid #0693e3;
+}
+
+.en-btn {
+    background-color: #16163F;
+    color: #fff;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 3px;
+}

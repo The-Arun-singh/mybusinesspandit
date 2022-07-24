@@ -1,0 +1,8 @@
+.main {
+    height: 69vh;
+    background: hsla(202, 51%, 57%, 0.5) 
+        url('../../media/private-limited-company-2.jpg') 
+        no-repeat 
+        center / cover;
+    background-blend-mode:overlay;
+}
