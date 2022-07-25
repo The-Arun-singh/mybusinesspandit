@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    overflow-x: hidden;
+}
 
 /* ===========================HEADER========================== */
 
@@ -130,12 +133,12 @@
     padding: 3px;
     background-color: #fff;
 }
-.btn a {
+.navbar>.btn> a {
     text-transform: capitalize;
     text-decoration: none;
     color: var(--color);
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
