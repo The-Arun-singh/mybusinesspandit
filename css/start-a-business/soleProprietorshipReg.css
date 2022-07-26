@@ -98,21 +98,50 @@
     box-sizing: border-box;
     border: 2px groove transparent;
     border-radius: 25px;
-    margin: 2.7rem 0.5rem;
+    margin: 2.7rem 0.5rem 1.5rem 1rem;
     padding: 1rem 1.5rem 0.5rem;
     border-top-color: #6ec1e4;
     box-shadow: 4px 4px 10px 0px rgb(0 0 0 / 18%);
     text-align: justify;
 }
-.overview h2 {
+.overview h2, .heading> h2 {
     font-size: 2rem;
     color: #16163F;
     text-align: center;
-    margin: 0 1rem 1rem 1rem; 
+    margin: 0 1rem 0.5rem 1rem; 
 }
 .overview ul {
     margin-left: 1rem;
 }
+
+
+.advantages {
+    margin: 0.5rem;
+}
+.heading {
+    text-align: center;
+} 
+.heading> p {
+    color: #7A7A7A
+}
+.cells {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+}
+.cells div:nth-child(odd) {
+    background-color: var(--color);
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+
+}
+.cell {
+    text-align: center;
+    padding: 1rem;
+}
+
 
 /* ====================================== CONTENT END ================================= */
 
@@ -122,12 +151,12 @@
 .aside {
     position: sticky;
     height: 19rem;
-    width: 75%;
+    width: 70%;
     top: 25vh;
     margin: 15% 5%;
-    padding: 1.5em 0.5em;
+    padding: 1rem;
     border: 1px solid var(--color);
-    border-radius: 1em;
+    border-radius: 1rem;
     box-shadow: 3px 4px 10px 1px var(--color);
 }
 
@@ -136,12 +165,17 @@
     flex-direction: column;
     text-align: center; 
 }
-.enquire-now h3, p {
-    padding-bottom: 1em;
+.enquire-now h3 {
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+}
+.enquire-now p {
+    color: #7A7A7A;
+    padding-bottom: 0.3rem;
 }
 .enquire-now input, textarea, button {
-    margin: 0.2em 0;
-    padding: 0.5em;
+    margin: 0.2rem 0;
+    padding: 0.4rem;
     border: 1px solid black;
 }
 .enquire-now input:focus, textarea:focus {
