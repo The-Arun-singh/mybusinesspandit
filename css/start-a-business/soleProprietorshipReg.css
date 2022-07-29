@@ -222,6 +222,7 @@
 .faqs {
     display: flex;
     flex-direction: column;
+    margin: 2rem;
     margin-bottom: 5rem;
 }
 .faqs ul li{
@@ -229,7 +230,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 1rem;
+    margin: 2rem;
 }
 .ques {
     font-weight: bold;
@@ -238,16 +239,11 @@
     color: #535353;
 }
 .answer {
-    visibility: hidden;
     margin-left: 1rem;
     color: #7A7A7A;
 }
-.ques:hover {
-    transform: scale(1.2);    
-}
-.ques:focus-within .answer>p {
-    visibility: visible;
-    color: black;    
+.ques:hover, .answer:hover {
+    transform: scale(1.01);    
 }
 
 /* ====================================== CONTENT END ================================= */
