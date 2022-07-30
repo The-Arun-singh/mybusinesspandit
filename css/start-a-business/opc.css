@@ -10,3 +10,15 @@
 }
 
 /* ===================main======================= */
+
+.intro, .advantages-list, .types, .min-requirements {
+    background-color: antiquewhite;
+    margin: 1rem;
+    padding: 3rem 1.5rem 2rem 3rem;
+
+}
+.intro h2,.advantages-list h2, .types h2, .min-requirements h2 {
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: var(--color);
+}
