@@ -1,18 +1,18 @@
 
 
-/* ============================================= MAIN START =========================================== */
 
-
-/* .main {
-    position: relative;
+/* * {
 } */
 
-.banner {
-    height: 60vh;
-    background: url('../../media/private-limited-company-2.jpg') no-repeat center / cover fixed;
+
+
+/* ============================================= MAIN START =========================================== */
+
+.main {
+    position: relative;
 }
 
-/* 
+
 
 .overlay {
     position: absolute;
@@ -23,11 +23,19 @@
     width: 100%;
 }
 .overlay h1 {
-    font-size: 50px;
+    font-size: 46px;
     color: #fff;
-    margin: 1rem 6rem;
-    margin-top: 3rem;
-    width: 40%;
+    margin: 1rem 6rem 0.5rem;
+    margin-top: 4rem;
+    text-transform: capitalize;
+}
+.overlay p {
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0 6rem 0.5rem;
+    margin-top: 0;
+
 }
 .overlay> button {
     margin: 0 6rem;
@@ -72,31 +80,32 @@
     border-right: 45px solid transparent;
     border-bottom: 45px solid #fff;
     border-left: 45px solid #fff;
-} */
+}
+
 
 
 /* ============================================== MAIN END ============================================= */
 
-/* ====================================================================================== */
 
 /* =============================================== ARTICLE START ======================================== */
 
-/* 
+
 .article {
     box-sizing: content-box;
-    width: 94vw;
-    margin: auto;
+    /* width: 96vw; */
+    margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 75% 25%;
-} */
+}
+
 /* ====================================== CONTENT START =============================== */
-/* 
+
 .overview {
     box-sizing: border-box;
     border: 2px groove transparent;
     border-radius: 25px;
     margin: 3rem 0.5rem 1.5rem 1rem;
-    padding: 1rem 1.5rem 0.5rem;
+    padding: 1rem 1.5rem 2rem;
     border-top-color: #6ec1e4;
     box-shadow: 4px 4px 10px 0px rgb(0 0 0 / 18%);
     text-align: justify;
@@ -110,10 +119,10 @@
 }
 .overview ul {
     margin-left: 1rem;
-} */
+}
 
 
-/* 
+
 .advantages {
     margin: 1.5rem 0.5rem 1.5rem 1rem;
     padding: 0 1rem 0.5rem 1rem;
@@ -139,7 +148,7 @@
 .cells {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0.5rem;
+    /* padding: 1rem; */
 }
 .cells div:nth-child(odd) {
     background-color: var(--color);
@@ -150,18 +159,30 @@
 .cells div:nth-child(even) {
     color: var(--color);
 }
-.cell h2 {
+.cell h3 {
     margin-bottom: 1rem;
     font-weight: bolder;
     font-size: 1.5rem;
 }
+.cell li {
+    text-align: justify;
+    margin:1rem;
+    list-style: none;
+} 
+.cell p {
+    text-align: justify;
+}
 .cell {
     text-align: center;
-    padding: 2rem 1rem;
-} */
+    padding: 2rem 1.2rem 3.5rem;
+    margin: 0.5rem;
+}
 
 
-/* 
+
+
+
+
 .docs-required {
     margin: 2rem 3rem;
     color: #7A7A7A;
@@ -179,11 +200,17 @@
     list-style: none;
     font-size: 1.3rem;
     padding: 0.3rem;
-} */
+}
+.docs-required> ol li {
+    list-style-position: inside;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+}
 
 
 
-/* .reg-process {
+
+.reg-process {
     margin: 1rem;
     padding: 1rem 1.2rem;
     color: #7A7A7A;
@@ -211,11 +238,12 @@
 .reg-process section > h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-} */
+}
 
 
 
-/* .faqs {
+
+.faqs {
     display: flex;
     flex-direction: column;
     margin: 2rem;
@@ -241,18 +269,17 @@
 .ques:hover, .answer:hover {
     transform: scale(1.01);    
 }
-/* .answer {
-    display: none;
-}
-.ques:hover .answer {
-    display: inline;
-} */ */
+
+
 /* ====================================== CONTENT END ================================= */
 
-/* ====================================================================================== */
+
+
+
+
 
 /* ======================================= ASIDE START ================================ */
-/* .aside {
+.aside {
     position: sticky;
     height: 22.5rem;
     width: 14rem;
@@ -297,7 +324,8 @@
 }
 .enquire-now button:hover {
     box-shadow: 3px 2px 10px 1px var(--color);
-} */
+}
 /* ====================================== ASIDE END ================================= */
 
-/* ================================================ ARTICLE END ========================================  */
+
+/* ================================================ ARTICLE END ======================================== */

@@ -1,0 +1,36 @@
+
+
+
+/* ===================main======================= */
+
+.banner {
+    height: 60vh;
+    background: url('../../media/220-SM938837.jpg') no-repeat center / cover fixed;
+}
+
+/* ===================main======================= */
+
+/* ==================article======================= */
+
+.benefits {
+    text-align: center;
+    margin: 4rem 1rem 6rem 2rem;
+}
+.benefits h2{
+    color: var(--color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.benefits p {
+    color: #7A7A7A;
+}
+
+
+
+
+
+
+
+
+
+/* ==================article======================= */
