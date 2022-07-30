@@ -198,7 +198,7 @@
 }
 .docs-required> ul li {
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding: 0.3rem;
 }
 .docs-required> ol li {
@@ -246,28 +246,34 @@
 .faqs {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 1rem;
     margin-bottom: 5rem;
 }
 .faqs ul li{
     list-style: none;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 2rem;
 }
 .ques {
+    text-align: justify;
     font-weight: bold;
     margin-bottom: 0.5rem;
     font-size: 20px;
     color: #3a3a3a;
 }
 .answer {
-    margin-left: 1rem;
+    text-align: justify;
+    margin-left: 1.2rem;
     color: #7A7A7A;
 }
+.answer ul li {
+    margin: 1rem;
+}
 .ques:hover, .answer:hover {
-    transform: scale(1.01);
+    /* transform: scale(1.01); */
     color: var(--color);    
 }
 

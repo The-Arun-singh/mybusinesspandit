@@ -12,13 +12,19 @@
 /* ===================main======================= */
 
 .intro, .advantages-list, .types, .min-requirements {
-    background-color: antiquewhite;
     margin: 1rem;
-    padding: 3rem 1.5rem 2rem 3rem;
+    padding: 2rem 1.5rem 2rem 3rem;
 
 }
 .intro h2,.advantages-list h2, .types h2, .min-requirements h2 {
-    padding: 1rem;
-    font-size: 1.8rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
     color: var(--color);
+}
+.intro, .advantages-list li, .types li, .min-requirements li {
+    list-style-position: inside;
+    color: #7A7A7A;
+}
+.advantages-list h3 {
+    color: #515151;
 }
