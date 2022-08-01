@@ -1,0 +1,42 @@
+
+
+
+
+/* ===================main======================= */
+
+.banner {
+    height: 60vh;
+    background: url('../../media/220-SM768078.jpg') no-repeat center / cover fixed;
+}
+
+/* ===================main======================= */
+
+.funding {
+    margin: 3rem 2rem;
+    padding: 1rem;
+}
+.funding h2 {
+    font-size: 2rem;
+    color: #16163F;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 1rem 1rem 1rem; 
+}
+.funding hr {
+    width: 15%;
+    margin: 0 auto;
+    height: 0.1rem;
+    background-color: #16163F;
+    border: 1px solid #16163F;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.funding p {
+    font-size: 1.15rem;
+    color: #3f3f3f;
+    font-weight: 400;
+}
+.funding li {
+    padding: 0.5rem;
+    color: #575757;
+}

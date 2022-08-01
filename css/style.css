@@ -136,7 +136,7 @@
     color: #7A7A7A;
     padding-bottom: 1rem;
 }
-.advantages hr, .docs-required hr, .reg-process hr, .faqs hr {
+.advantages hr, .need-for-MSC hr, .docs-required hr, .reg-process hr, .faqs hr, .activities hr {
     width: 15%;
     margin: 0 auto;
     height: 0.1rem;
@@ -150,7 +150,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     /* padding: 1rem; */
 }
-.cells div:nth-child(odd) {
+.cells div:nth-child(odd), .c10 {
     background-color: var(--color);
     color: #fff;
     border: 1px solid transparent;
@@ -176,6 +176,10 @@
     text-align: center;
     padding: 2rem 1.2rem 3.5rem;
     margin: 0.5rem;
+}
+
+.c10 {
+    color: #fff !important;
 }
 
 
