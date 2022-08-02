@@ -1,0 +1,29 @@
+
+
+
+
+/* ===================main======================= */
+
+.banner {
+    height: 60vh;
+    background: url('../../media/220-SM926184.jpg') no-repeat center / cover fixed;
+}
+
+/* ===================main======================= */
+
+
+.imp-points {
+    margin: 2rem;
+    padding: 1rem;
+}
+.imp-points h2 {
+    font-size: 2rem;
+    color: var(--color);
+    padding: 1rem
+}
+.imp-points ul li {
+    font-size: 1.1rem;
+    list-style-position: inside;
+    padding: 0.3rem;
+    color: #4d4d4d;
+}
