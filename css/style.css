@@ -110,7 +110,7 @@
     box-shadow: 4px 4px 10px 0px rgb(0 0 0 / 18%);
     text-align: justify;
 }
-.overview h2, .heading> h2, .docs-required h2, .reg-process h2, .faqs h2 {
+.overview h2, .heading> h2, .docs-required h2, .reg-process h2, .faqs h2, .eligibility h2 {
     font-size: 2rem;
     color: #16163F;
     text-align: center;
@@ -139,7 +139,7 @@
     color: #7A7A7A;
     padding-bottom: 1rem;
 }
-.advantages hr, .need-for-MSC hr, .docs-required hr, .reg-process hr, .faqs hr, .activities hr {
+.advantages hr, .need-for-MSC hr, .docs-required hr, .reg-process hr, .faqs hr, .activities hr, .eligibility hr{
     width: 15%;
     margin: 0 auto;
     height: 0.1rem;
@@ -193,7 +193,9 @@
 
 .docs-required {
     margin: 2rem 3rem;
+    padding: 1rem;
     color: #7A7A7A;
+    
 }
 .docs-required h3 {
     font-size: 1.3rem;
@@ -250,6 +252,25 @@
     margin-bottom: 0.5rem;
 }
 
+
+
+
+.eligibility {
+    margin:2rem;
+    padding: 1rem;
+}
+.eligibility li {
+    margin-left: 1rem;
+}
+.eligibility p, .eligibility li {
+    padding-bottom: 0.8rem;
+    color: #7A7A7A;
+}
+.eligibility p {
+    color: #4b4b4b;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
 
 
 

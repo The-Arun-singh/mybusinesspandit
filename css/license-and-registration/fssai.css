@@ -11,3 +11,45 @@
 
 /* ===================main======================= */
 
+/* .eligibility {
+    margin:2rem;
+    padding: 1rem;
+}
+.eligibility li {
+    margin-left: 1rem;
+}
+.eligibility p, .eligibility li {
+    padding-bottom: 0.8rem;
+    color: #7A7A7A;
+}
+.eligibility p {
+    color: #4b4b4b;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+} */
+
+
+.figure {
+    display:flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+}
+.figure img {
+    max-width: 70%;
+}
+
+
+
+.banner-testimonial {
+    height: 60vh;
+    background: url('../../media/FSSAI-FOOTER.jpg') no-repeat top / cover fixed;
+}
+.overlay-testimonial {
+    position: absolute;
+    background: hsl(240, 48%, 17% , 0.9);
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+}
