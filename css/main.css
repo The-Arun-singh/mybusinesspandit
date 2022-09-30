@@ -1,4 +1,6 @@
-
+/* body {
+    overflow-y: hidden;
+} */
 a {
     text-transform: capitalize;
     color: #fff;
@@ -9,7 +11,8 @@ a {
 .main-body {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
+    margin: 2rem;
 }
 
 
@@ -260,16 +263,36 @@ a {
     width: 80%;
     margin: auto;
     display: flex;
-    gap:3rem;
+    gap:1.5rem;
 }
 .list-1,.list-2 {
     width: 50%;
     border: 0.1rem solid transparent;
-    border-radius: 0.5rem;
-    box-shadow: 3px 3px 10px 2px #575757;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 10px 2px #797979;
     padding: 2rem;
+    color:#16163F;
 }
-
+.sec10 ul {
+    list-style: none;
+}
+.sec10 h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+.hr {
+    width: 15%;
+    margin: 0;
+    height: 0.1rem;
+    background-color: #16163F;
+    border: 1px solid #16163F;
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+}
+.list-1 li, .list-2 li {
+    font-size: 1.05rem;
+    margin: 0.5rem 0;
+} 
 
 
 
