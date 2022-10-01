@@ -12,7 +12,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    margin: 2rem;
+    margin: 2rem 0;
 }
 
 
@@ -62,13 +62,13 @@ a {
 .current {
     display: unset;
 }
-
+/* 
 .illustration {
     right: 1rem;
-}
-.illustration > img {
+} */
+/* .illustration > img {
     height: auto;
-}
+} */
 
 
 /* ================================== */
