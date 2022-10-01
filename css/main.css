@@ -19,7 +19,7 @@ a {
 /* =========================================== */
 
 .sec1 {
-    /* height: 60vh; */
+    width: 90%;
     display: flex;
     gap: 2rem;
     margin: auto;
@@ -27,9 +27,12 @@ a {
 .container {
     width: 50%;
 }
+.container > img {
+    width: 100%;
+}
 .slider {
     display: flex;
-    margin: 8rem  5rem auto 12rem ;
+    margin: 8rem  0;
 }
 .slider button {
     background-color: var(--color);
@@ -46,7 +49,6 @@ a {
 .slide {
     display: none;
     text-align: left;
-
 }
 .slide h2 {
     text-transform: capitalize;
@@ -62,13 +64,7 @@ a {
 .current {
     display: unset;
 }
-/* 
-.illustration {
-    right: 1rem;
-} */
-/* .illustration > img {
-    height: auto;
-} */
+
 
 
 /* ================================== */
