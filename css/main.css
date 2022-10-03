@@ -31,9 +31,8 @@ a {
     width: 100%;
 }
 .slider {
-    text-align: center;
     display: flex;
-    margin: 6rem  0;
+    margin: 8rem  0;
 }
 .slider button {
     background-color: var(--color);
@@ -50,16 +49,15 @@ a {
 .slide {
     display: none;
     text-align: left;
-    margin-left: 2rem;
 }
 .slide h2 {
     text-transform: capitalize;
     font-size: 2rem;
     color: #16163F;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
 }
 .slide p {
-    margin: 1rem 0;
+    margin: 0.3rem;
     font-size: 1.1rem;
     color: var(--color);
 }
