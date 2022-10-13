@@ -70,14 +70,14 @@ a {
 /* ================================== */
 /* HEADING AND HR CSS */
 
-.sec2-img > h2, .content h2, .text h2 {
+.heading > h2, .content h2, .text h2 {
     font-size: 2rem;
     color: #16163F;
     text-align: center;
     text-transform: uppercase;
     margin: 0 1rem 1rem 1rem; 
 }
-.sec2-img > hr, .content hr, .text hr {
+.heading > hr, .content hr, .text hr {
     width: 15%;
     margin: 0 auto;
     height: 0.1rem;
@@ -90,22 +90,13 @@ a {
 
 /* ======================== */
 
-.sec2 {
+.sec2-content {
     width: 80%;
     margin: auto;
     display: flex;
     /* align-items: center; */
     justify-content: center;
     gap: 4rem;
-}
-.sec2-img > hr {
-    margin-bottom: 8rem;
-}
-.sec2-img {
-    width: 50%;
-}
-.sec2-img img {
-    width: 100%;
 }
 
 .wrap {
@@ -201,6 +192,7 @@ a {
     width: 100%;
 }
 .sec-btn {
+    margin-top: 1rem;
     border-radius: 0.8rem;
     padding: 0.4rem 0.55rem;
     background-color: #16163F;
@@ -305,15 +297,28 @@ a {
     
 }
 @media (max-width:767px) {
+    /* .sec {
+        position: relative;
+    }
+    .intro {
+        position: absolute;
+    } */
 
+    .about-us {
+        padding: 2.5rem 0.5rem;
+    }
     .sec {
         flex-direction: column-reverse;
+        gap: 0;
+    }
+    .slide, .text {
+        text-align: center;
     }
 
-    .sec2 {
+    .sec2-content {
         flex-direction: column;
         align-items: center;
-
+        gap: 0;
     }
     .wrap {
         width: 100%;
@@ -325,7 +330,7 @@ a {
 
 
 
-    .text , .sec-img{
+    .text , .sec-img, .container{
         width: 100%;
     }
     .sec-content {
@@ -339,6 +344,9 @@ a {
         width: 100%;
         flex-direction: column;
         align-items: center;
+    }
+    .list-1,.list-2 {
+        width: 80%;
     }
 }
 
