@@ -132,6 +132,7 @@ a {
 .about-us {
     background-color: hsl(10, 100%, 2%, 0.85);
     padding: 3rem;
+    text-align: justify;
 }
 
 .content {
@@ -176,7 +177,7 @@ a {
 }
 .text {
     width:50%;
-    margin: 6rem auto;
+    margin: 4rem auto;
 }
 .text>h2, .text>p {
     padding: 1rem 0;
@@ -297,6 +298,9 @@ a {
     
 }
 @media (max-width:767px) {
+    .main-body {
+        gap: 0.5rem;
+    }
     /* .sec {
         position: relative;
     }
@@ -346,7 +350,7 @@ a {
         align-items: center;
     }
     .list-1,.list-2 {
-        width: 80%;
+        width: 70%;
     }
 }
 
