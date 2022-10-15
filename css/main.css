@@ -105,19 +105,27 @@ a {
 }
 .sec2-nav {
     width: 90%;
-    height: 4rem;
+    height: 3rem;
     margin: 1.5rem auto;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     border: 3px solid #fff;
     border-radius: 8px;
     box-shadow: 2px 2px 5px 2px rgb(163, 163, 163);
     list-style-position: inside;
     list-style-type: square;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sec2-nav> a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: black;
     text-decoration: none;
+}
+.sec2-nav a:hover {
+    text-shadow: 2px 2px 5px #16163F66;
+    font-size: 1.197rem;
 }
 
 
@@ -219,7 +227,7 @@ a {
     border: 0.1rem solid transparent;
     border-radius: 1.5rem;
     box-shadow: 3px 3px 10px 2px #797979;
-    padding: 2rem;
+    padding: 1rem 2rem;
     color:#16163F;
 }
 .sec10 ul {
@@ -227,7 +235,14 @@ a {
 }
 .sec10 h2 {
     font-size: 1.8rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
+}
+.sec10-list li a {
+    color: var(--color);
+}
+.sec10-list li a:hover {
+    text-shadow: 2px 2px 5px #16163F66;
+    font-size: 1.05rem;
 }
 .hr {
     width: 15%;
