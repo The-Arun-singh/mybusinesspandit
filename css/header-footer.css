@@ -7,9 +7,7 @@
     padding: 0;
     font-size: 17px;
 }
-body {
-    overflow-x: hidden;
-}
+
 
 /* ===========================<HEADER>========================== */
 
@@ -50,9 +48,11 @@ body {
     top: 0px;
     padding: 0.2rem 1rem;
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
     background-color: var(--color);
     z-index: 1;
+    align-items: center;
 }
 
 .logo_img {
@@ -70,8 +70,18 @@ body {
 .list {
     /* width: 100%; */
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     background-color: var(--color);
+}
+.list-open-btn, .list-close-btn {
+    display: none;
+    position:absolute;
+    right: 9rem;
+    background-color: #fff;
+    color: var(--color);
+    border: 1px solid var(--color);
+    border-radius: 4px;
+    
 }
 .list li, .list li a, .sublist li a {
     text-transform: capitalize;
@@ -130,12 +140,12 @@ body {
 /* -----hover effect--------- */
 
 .btn {
-    width: 9%;
-    margin: auto 0;
+    width: 6.5rem;
+    margin: auto 0.1rem;
     text-align: center;
     border: 2px solid var(--color);
-    border-radius: 20px;
-    padding: 3px;
+    border-radius: 10px;
+    padding: 3px 1px;
     background-color: #fff;
 }
 .navbar>.btn> a {
@@ -301,12 +311,32 @@ footer hr {
         display: block;
     }
     .list {
+        position: absolute;
+        width: 60vw;
+        top: 4rem;
+        right: 50%;
+        transform: translate(50%);
+        flex-direction: column;
+        background-color: var(--color);
+        gap:0.2rem;
+    }
+    .list li a {
+        margin: 1rem 0;
+    }
+    .list li {
         display: none;
+        width: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+        border-bottom: 2px solid #fff;
     }
-    .btn {
-        width: 20%;
+    .list-open-btn {
+        display: unset;
+    }
+    /* .btn {
+        width: 6rem;
         padding: 6px;
-    }
+    } */
     .footer {
         display: block;
     }
