@@ -1,47 +1,37 @@
 /* =====================================BANNER START============================= */
 
-main {
-    height: 90vh;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+#main {
+    display: flex;
 }
+.container {
+    background: url('../../media/220-SM938837.jpg');
+    background-position: center;
+    background-size: cover;
 
-.banner {
-    position: relative;
-    width: 60vw;
 }
-.overlay {
-    position: absolute;
+.text {
     background-color: hsl(240, 48%, 17%, .9);
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10rem 0;
 }
-.content {
-    height: 100%;
-    background: url('../../media/220-SM938837.jpg');
-    background-position: center;
-    background-size: cover;
-}
-.banner h1 {
+.text h1 {
     width: 50%;
     color: #ffffff;
-    font-size: 77px;
+    font-size: 5rem;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1em;
     text-align: center;
 }
-.banner img {
+.text img {
     width: 20%;
-    opacity:unset;
+    /* opacity:unset; */
     background-color: black;
 }
+
 
 
 
@@ -50,6 +40,9 @@ main {
 
 /* ======================================ENQUIRY START============================= */
 
+.enquiry {
+    padding: 5rem auto 5rem;
+}
 .enquiry form {
     display: flex;
     flex-direction: column;
@@ -96,7 +89,7 @@ input, #Services {
 }
 input:focus {
     outline: none;
-    border: 1px solid #0693e3;
+    border: 2px solid #0693e3;
 }
 
 .en-btn {
@@ -107,4 +100,26 @@ input:focus {
     font-size: 16px;
     border: transparent;
     border-radius: 3px;
+}
+
+
+/* =======================MEDIA-QUERIES=========================== */
+
+@media screen and (max-width : 767px) {
+    #main {
+        flex-direction: column;
+    }
+    .text {
+        padding: 5rem 0;
+    }
+    .text h1 {
+        margin: 0.5rem;
+        font-size: 2rem;
+    }
+    .enquiry {
+        padding: 3rem 2rem;
+    }
+    .enquiry form {
+        padding: 0;
+    }
 }

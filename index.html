@@ -36,11 +36,18 @@
             <a href="index.html"><img class="logo_img" src="media/logo1.png" alt="logo"></a>
         </div>
 
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
         
-        <div class="list-open-btn" id="open_btn"><ion-icon name="menu-outline"></ion-icon></div>
-        <div class="list-close-btn" id="close_btn"><ion-icon name="close-outline"></ion-icon></div>
         <ul class="list">
-            <li><a href="#">start a business  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-1">
+                <label for="btn-1" class="first">
+                    start a business  
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="html/start-a-buisness/sole-proprietorship-registration.html">sole proprietorship registration</a></li>
                     <li><a href="html/start-a-buisness/partnership-registration.html">partnership registration</a></li>
@@ -53,7 +60,11 @@
                     <li><a href="html/start-a-buisness/section-8-company-registration.html">section 8 company registration</a></li>
                 </ul>
             </li>
-            <li><a href="#">license and registration  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-2">
+                <label for="btn-2" class="second">
+                    license and registration  <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="html/license-and-registration/gst-registration.html">GST registration</a></li>
                     <li><a href="html/license-and-registration/trademark-registration.html">trademark registration</a></li>
@@ -66,20 +77,29 @@
                     <li><a href="html/license-and-registration/80g-and-12a-registration.html">80G and 12A registration</a></li>
                 </ul>
             </li>
-            <li><a href="#">auditing and taxation  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-3">
+                <label for="btn-3" class="third">
+                    auditing and taxation  <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="html/auditing-and-taxation/income-tax.html">income tax</a></li>
                     <li><a href="html/auditing-and-taxation/gst.html">GST</a></li>
                     <li><a href="html/auditing-and-taxation/statutory-audit.html">statutory audit</a></li>
                 </ul>
             </li>
-            <li><a href="#">legal and compliances  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-4">
+                <label for="btn-4" class="fourth">
+                        legal and compliances <ion-icon      name="chevron-down-outline">
+                        </ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="html/legal-and-compliances/annual-filling-and-all-other-compliances.html">annual filling and all other compliances</a></li>
                 </ul>
             </li>
             <li><a href="html/contact-us.html">contact us</a></li>
-            <li><a href="html/blog.html">blog</a></li>
+            <li id="blog"><a href="html/blog.html">blog</a></li>
         </ul>
 
         <div class="btn">
@@ -527,4 +547,4 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-</html>
+</html> 

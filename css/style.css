@@ -10,41 +10,39 @@
 
 .main {
     position: relative;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+} 
 
 
 
-.overlay {
-    position: absolute;
+.text {
+    position: relative;
     background: hsl(220, 48%, 22% , 0.7);
-    top: 0;
-    left: 0;
-    height: 60vh;
-    width: 100%;
+    padding: 8rem 6rem;
 }
-.overlay h1 {
-    font-size: 46px;
+.text h1 {
+    font-size: 3rem;
     color: #fff;
-    margin: 1rem 6rem 0.5rem;
-    margin-top: 4rem;
     text-transform: capitalize;
 }
-.overlay p {
+.text p {
     color: #fff;
     font-size: 34px;
     font-weight: bold;
-    margin: 0 6rem 0.5rem;
-    margin-top: 0;
+    /* margin: 0 6rem 0.5rem;
+    margin-top: 0; */
 
 }
-.overlay> button {
-    margin: 0 6rem;
+.text> button {
+    margin: 1rem 1rem 0 0;
     border: 2px solid #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 4px 8px 5.5px 8px;
     box-shadow: 1px 1px 2px 0.5px rgb(60, 60, 60);
 }
-.overlay> button> a {
+.text> button> a {
     font-size: 14px;
     display: flex;
     align-items: flex-end;
@@ -52,34 +50,29 @@
     text-decoration: none;
     color: black;
 }
-.overlay> button:hover {
+.text> button:hover {
     transform: scale(1.01);
     box-shadow: 1px 1px 2px 1.5px rgb(60, 60, 60);
 }
-.overlay::after {
+.text::after, .text::before {
     content: "";
     position:absolute;
     height: 0px;
     width: 15%;
-    bottom: 0px;
-    left: 0px;
-    border-top: 45px solid transparent;
-    border-right: 45px solid transparent;
-    border-bottom: 45px solid #fff;
-    border-left: 45px solid #fff;
+    border-top: 2rem solid transparent;
+    border-right: 2rem solid transparent;
+    border-bottom: 2rem solid #fff;
+    border-left: 2rem solid #fff;
+
 }
-.overlay::before {
-    content: "";
-    position:absolute;
-    height: 0px;
-    width: 15%;
+.text::after {
+    bottom: -1px;
+    left: 0px;
+}
+.text::before {
     top: 0px;
     right: -1px;
     transform: rotate(180deg);
-    border-top: 45px solid transparent;
-    border-right: 45px solid transparent;
-    border-bottom: 45px solid #fff;
-    border-left: 45px solid #fff;
 }
 
 
@@ -91,24 +84,27 @@
 
 
 .article {
-    box-sizing: content-box;
-    /* width: 96vw; */
-    margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 75% 25%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0 2rem 0 4rem;
+    margin: 0 0 4rem 0;
 }
 
 /* ====================================== CONTENT START =============================== */
 
 .overview {
-    box-sizing: border-box;
+    /* margin: 4rem 3rem 3rem; */
+    padding: 1rem 1.5rem 2rem;
     border: 2px groove transparent;
     border-radius: 25px;
-    margin: 3rem 0.5rem 1.5rem 1rem;
-    padding: 1rem 1.5rem 2rem;
     border-top-color: #6ec1e4;
     box-shadow: 4px 4px 10px 0px rgb(0 0 0 / 18%);
-    text-align: justify;
+    text-align: left;
 }
 .overview h2, .heading> h2, .docs-required h2, .reg-process h2, .faqs h2, .eligibility h2 {
     font-size: 2rem;
@@ -127,9 +123,6 @@
 
 
 .advantages {
-    margin: 1.5rem 0.5rem 1.5rem 1rem;
-    padding: 0 1rem 0.5rem 1rem;
-    padding-top: 0.2rem;
     border-radius: 1rem;
 }
 .heading {
@@ -137,7 +130,7 @@
 } 
 .heading> p {
     color: #7A7A7A;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 .advantages hr, .need-for-MSC hr, .docs-required hr, .reg-process hr, .faqs hr, .activities hr, .eligibility hr{
     width: 15%;
@@ -146,7 +139,7 @@
     background-color: #16163F;
     border: 1px solid #16163F;
     border-radius: 3px;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 .cells {
     display: grid;
@@ -163,7 +156,7 @@
     color: var(--color);
 }
 .cell h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     font-weight: bolder;
     font-size: 1.5rem;
     text-transform: capitalize;
@@ -178,7 +171,7 @@
 }
 .cell {
     text-align: center;
-    padding: 2rem 1.2rem 3.5rem;
+    padding: 2rem 1.2rem;
     margin: 0.5rem;
 }
 
@@ -192,8 +185,6 @@
 
 
 .docs-required {
-    margin: 2rem 3rem;
-    padding: 1rem;
     color: #7A7A7A;
     
 }
@@ -221,8 +212,8 @@
 
 
 .reg-process {
-    margin: 2rem;
-    padding: 1rem 1.2rem;
+    /* margin: 2rem; */
+    /* padding: 1rem 1.2rem; */
     color: #7A7A7A;
 }
 .reg-process > img {
@@ -255,10 +246,10 @@
 
 
 
-.eligibility {
-    margin:2rem;
+/* .eligibility {
+    margin: 0;
     padding: 1rem;
-}
+} */
 .eligibility li {
     margin-left: 1rem;
 }
@@ -275,62 +266,39 @@
 
 
 .faqs {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    margin-bottom: 5rem;
+    margin: 1rem 0 3rem 1rem;
 }
-.ques-ans> ul li {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 2rem;
-}
-.ques-ans> ul li>p {
-    color: #4d4d4d;
-}
-.ques {
-    text-align: justify;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    font-size: 20px;
-    color: #3a3a3a;
-}
-.answer {
-    text-align: justify;
-    margin-left: 1.2rem;
+.faqs p {
     color: #7A7A7A;
 }
-.answer> ul li, .answer> ol li {
-    margin: 0;
-    padding: 0 0.5rem;
+details {
+    margin: 1.5rem 0;
 }
-.answer h3 {
-    padding: 0.8rem 0;
+details > summary {
+    font-size: 1.3rem;
+    list-style-position: outside;
 }
-.ques:hover, .answer:hover {
-    /* transform: scale(1.01); */
+details > p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #7A7A7A;
+}
+.answer:hover {
     color: var(--color);    
-}
+} 
 
 
 
 /* ====================================== CONTENT END ================================= */
 
 
-
-
-
-
 /* ======================================= ASIDE START ================================ */
 .aside {
     position: sticky;
-    height: 22.5rem;
-    width: 14rem;
     top: 25vh;
-    margin: 15% 5% 5% 5%;
-    padding: 0.5rem;
+    height: 26rem;
+    margin: 7rem 5rem 4rem 3rem;
+    padding: 0 1.5rem;
     border: 1px solid var(--color);
     border-radius: 1rem;
     box-shadow: 3px 4px 10px 1px var(--color);
@@ -342,18 +310,19 @@
     text-align: center; 
 }
 .enquire-now h3 {
-    margin: 0.5rem;
+    margin: 0.6rem 0.5rem;
     font-size: 1.4rem;
 }
 .enquire-now p {
     color: #7A7A7A;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.6rem;
     line-height: 1.15rem;
 }
 .enquire-now input, textarea, button {
     margin: 0.2rem 0;
     font-size: 0.9rem;
     padding: 0.5rem;
+    border-radius: 2px;
     border: 1px solid black;
 }
 .enquire-now input:focus, textarea:focus {
@@ -373,4 +342,76 @@
 /* ====================================== ASIDE END ================================= */
 
 
-/* ================================================ ARTICLE END ======================================== */
+/* ====================================== ARTICLE END =============================== */
+
+/* =================  MEDIA-QUERIES   ================ */
+
+@media screen and ( max-width: 767px) {
+    .main {
+        gap: 2rem;
+    }
+    .article {
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+    .container {
+        padding: 1.5rem;
+        gap: 2rem
+    }
+
+    .text {
+        padding: 6rem 5rem;
+    }
+    .text h1 {
+        font-size: 2.2rem;
+    }
+    .text::after, .text::before {
+        width: 20%;
+        border-top: 1.5rem solid transparent;
+        border-right: 1.5rem solid transparent;
+        border-bottom: 1.5rem solid #fff;
+        border-left: 1.5rem solid #fff;
+    }
+    
+    .overview h2, .heading> h2, .docs-required h2, .reg-process h2, .faqs h2, .eligibility h2 {
+        font-size: 1.4rem;
+    }
+    .advantages hr, .need-for-MSC hr, .docs-required hr, .reg-process hr, .faqs hr, .activities hr, .eligibility hr{
+        margin-bottom: 1.5rem;
+    }
+    .article, .cells {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .docs-required ul li, .docs-required> ol li, .docs-required> ul li {
+        font-size: 1rem;
+        color: #7A7A7A;
+    }
+
+    .faqs {
+        margin: 1rem 0 0 1rem;
+    }  
+    details > summary, details > p {
+        font-size: 1rem;
+    }
+
+
+    .aside {
+        position: static;
+    }
+    .aside {
+        position: sticky;
+        top: 25vh;
+        height: 22.5rem;
+        margin: 0 3rem 4rem;
+        padding: 2rem 1.5rem;
+        border: 1px solid var(--color);
+        border-radius: 1rem;
+        box-shadow: 3px 4px 10px 1px var(--color);
+    }
+}
+
+
+
+/* =================  MEDIA-QUERIES   ================ */

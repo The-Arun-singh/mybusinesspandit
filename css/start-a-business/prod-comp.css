@@ -5,7 +5,6 @@
 /* ===================main======================= */
 
 .banner {
-    height: 60vh;
     background: url('../../media/Producer-Company.jpg') no-repeat center / cover fixed;
 }
 
@@ -26,8 +25,8 @@ figure figcaption {
 }
 
 .activities {
-    margin: 2rem;
-    padding: 1rem;
+    /* margin: 2rem;
+    padding: 1rem; */
     color: #636363;
 }
 .activities ul li {
@@ -45,4 +44,18 @@ figure figcaption {
 
 .briefing {
     color: #636363;
+}
+
+/* ========================================= */
+
+
+/* MEDIA-QUERIES */
+
+@media screen and (max-width: 767px) {
+    .banner {
+        background: url('../../media/Producer-Company.jpg') no-repeat center / cover;
+    }
+    figure img {
+        width: 80%;
+    }
 }

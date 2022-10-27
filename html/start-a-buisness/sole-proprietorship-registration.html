@@ -6,15 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/header-footer.css">
     <link rel="stylesheet" href="../../css/start-a-business/soleProprietorshipReg.css">
-    <link rel="stylesheet" href="../../css/style.css"><!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND2N4EBYRM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-ND2N4EBYRM');
-    </script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script defer src="../../js/index.js"></script>
     <title>CA NilayShukla and Co.</title>
 </head>
 <body>
@@ -24,9 +17,11 @@
     <section class="header">
         <div class="contact-and-social">
             <ul class="contact-list">
-                <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
-                <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
-                <li><a href="#"><ion-icon class='icon' name="mail"></ion-icon>  mail@gmail.com</a></li>
+                <span class="mobile_no">
+                    <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
+                    <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
+                </span>
+                <li><a href="#"><ion-icon class='icon' name="mail"></ion-icon> mail@gmail.com</a></li>
             </ul>
             <ul class="social-list">
                 <li><a href="#"><ion-icon class='icon' name="logo-facebook"></ion-icon></a></li>
@@ -37,13 +32,26 @@
         </div>
     </section>
 
+
+
+    
     <nav class="navbar">
         <div class="logo">
             <a href="../../index.html"><img class="logo_img" src="../../media/logo1.png" alt="logo"></a>
         </div>
 
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        
         <ul class="list">
-            <li><a href="#">start a business  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-1">
+                <label for="btn-1" class="first">
+                    start a business  
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/start-a-buisness/sole-proprietorship-registration.html">sole proprietorship registration</a></li>
                     <li><a href="../../html/start-a-buisness/partnership-registration.html">partnership registration</a></li>
@@ -56,7 +64,11 @@
                     <li><a href="../../html/start-a-buisness/section-8-company-registration.html">section 8 company registration</a></li>
                 </ul>
             </li>
-            <li><a href="#">license and registration  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-2">
+                <label for="btn-2" class="second">
+                    license and registration  <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/license-and-registration/gst-registration.html">GST registration</a></li>
                     <li><a href="../../html/license-and-registration/trademark-registration.html">trademark registration</a></li>
@@ -69,20 +81,29 @@
                     <li><a href="../../html/license-and-registration/80g-and-12a-registration.html">80G and 12A registration</a></li>
                 </ul>
             </li>
-            <li><a href="#">auditing and taxation  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-3">
+                <label for="btn-3" class="third">
+                    auditing and taxation  <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/auditing-and-taxation/income-tax.html">income tax</a></li>
                     <li><a href="../../html/auditing-and-taxation/gst.html">GST</a></li>
                     <li><a href="../../html/auditing-and-taxation/statutory-audit.html">statutory audit</a></li>
                 </ul>
             </li>
-            <li><a href="#">legal and compliances  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-4">
+                <label for="btn-4" class="fourth">
+                        legal and compliances <ion-icon name="chevron-down-outline">
+                        </ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/legal-and-compliances/annual-filling-and-all-other-compliances.html">annual filling and all other compliances</a></li>
                 </ul>
             </li>
             <li><a href="../../html/contact-us.html">contact us</a></li>
-            <li><a href="../../html/blog.html">blog</a></li>
+            <li id="blog"><a href="../../html/blog.html">blog</a></li>
         </ul>
 
         <div class="btn">
@@ -91,17 +112,18 @@
     </nav>
 
 
+
+
     <!-- ==================================HEADER-END============================================ -->
 
 
     <!-- ===============================SECTION-START======================================= -->
 
 
-    <div class="main-body">
+    <div class="main">
 
-        <div class="main">
-            <div class="banner"></div>
-            <div class="overlay">
+        <div class="banner">
+            <div class="text">
                 <h1>Sole Proprietorship <br /> Registration</h1>
                 <button><a href="../../html/legal-and-compliances/annual-filling-and-all-other-compliances.html">Book Now <ion-icon class='icon' name="bookmark-outline"></ion-icon></a></button>
             </div>
@@ -292,82 +314,55 @@
                 <div class="faqs">
                     <h2>FREQUENTLY ASKED QUESTIONS</h2><hr>
                     <div class="ques-ans">
-                        <ul>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> What is Sole Proprietorship Firm?</span>
-                                <span class="answer">
-                                    <p>It's a simple single person firm. Remember it's not a company, 
-                                    it's a best way to start a business in India with the less costing and less compliance. its need only just one person for 
-                                    the legal registration.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> What is sole proprietorship meaning and what is a proprietor?</span>
-                                <span class="answer">
-                                    <p>When single person runs a business then such kind of business 
-                                    is called as proprietary business, and the owner of the business is called as proprietor.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> Who can be a proprietor?</span>
-                                <span class="answer">
-                                    <p>Any Indian citizen who is a resident of India can become a proprietor.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> What is the minimum capital required to register a proprietorship firm?</span>
-                                <span class="answer">
-                                    <p>A proprietorship firm can be started with any amount of capital.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> Is it possible to convert a proprietorship into private limited or a company?</span>
-                                <span class="answer">
-                                    <p>Yes. It is Possible to do so.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> How to open a bank current account for a Proprietorship?</span>
-                                <span class="answer">
-                                    <p>By providing relevant documents such as sole proprietorship proof, 
-                                    proprietor ID proof, proprietor Address proof, one can open current account in bank for a 
-                                    proprietorship.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> Can an NRI become a proprietor?</span>
-                                <span class="answer">
-                                    <p>No. NRI cannot become a proprietor.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> Which act governs the sole proprietorship companies in India?</span>
-                                <span class="answer">
-                                    <p>Sole proprietorship companies are not considered as a separate 
-                                    legal entity from their owners and thus there is no separate act for them.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> What businesses are commonly run as Sole Proprietorships?</span>
-                                <span class="answer">
-                                    <p>Most local businesses are run as sole proprietorships, from grocery stores to 
-                                    fast-food vendors, and even small traders and manufacturers.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> Do Proprietorship firm get Certificate of Incorporation?</span>
-                                <span class="answer">
-                                    <p>Proprietorship firms do not have a Certificate of Incorporation.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> Does a sole proprietor firm have continuous existence?</span>
-                                <span class="answer">
-                                    <p>No, the existence of a sole proprietorship business is dependent on the life of the 
-                                    proprietor.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> Is minor are allowed to start a sole proprietorship?</span>
-                                <span class="answer">
-                                    <p>No, a minor cannot allow starting a sole proprietorship. Only a major whose age 
-                                    is above 18 can start a sole proprietorship firm.</p>
-                                </span>
-                            </li>
-                            <li><span class="ques"><ion-icon name="caret-forward"></ion-icon> Is a sole proprietorship allowed to have employees?</span>
-                                <span class="answer">
-                                    <p>Yes, a sole proprietor is allowed to hire and have employees.</p>
-                                </span>
-                            </li>
-                        </ul>
+                        <details><summary class="ques">What is Sole Proprietorship Firm?</summary>
+                                <p class="answer">It's a simple single person firm. Remember it's not a company, 
+                                it's a best way to start a business in India with the less costing and less compdetailsance. its need only just one person for 
+                                the legal registration.</p>
+                        </details>
+                        <details><summary class="ques">What is sole proprietorship meaning and what is a proprietor?</summary>
+                                <p class="answer">When single person runs a business then such kind of business 
+                                is called as proprietary business, and the owner of the business is called as proprietor.</p>
+                        </details>
+                        <details><summary class="ques">Who can be a proprietor?</summary>
+                                <p class="answer">Any Indian citizen who is a resident of India can become a proprietor.</p>
+                        </details>
+                        <details><summary class="ques">What is the minimum capital required to register a proprietorship firm?</summary>
+                                <p class="answer">A proprietorship firm can be started with any amount of capital.</p>
+                        </details>
+                        <details><summary class="ques">Is it possible to convert a proprietorship into private detailsmited or a company?</summary>
+                                <p class="answer">Yes. It is Possible to do so.</p>
+                        </details>
+                        <details><summary class="ques">How to open a bank current account for a Proprietorship?</summary>
+                                <p class="answer">By providing relevant documents such as sole proprietorship proof, 
+                                proprietor ID proof, proprietor Address proof, one can open current account in bank for a 
+                                proprietorship.</p>
+                        </details>
+                        <details><summary class="ques">Can an NRI become a proprietor?</summary>
+                                <p class="answer">No. NRI cannot become a proprietor.</p>
+                        </details>
+                        <details><summary class="ques">Which act governs the sole proprietorship companies in India?</summary>
+                                <p class="answer">Sole proprietorship companies are not considered as a separate 
+                                legal entity from their owners and thus there is no separate act for them.</p>
+                        </details>
+                        <details><summary class="ques">What businesses are commonly run as Sole Proprietorships?</summary>
+                                <p class="answer">Most local businesses are run as sole proprietorships, from grocery stores to 
+                                fast-food vendors, and even small traders and manufacturers.</p>
+                        </details>
+                        <details><summary class="ques">Do Proprietorship firm get Certificate of Incorporation?</summary>
+                                <p class="answer">Proprietorship firms do not have a Certificate of Incorporation.</p>
+                        </details>
+                        <details><summary class="ques">Does a sole proprietor firm have continuous existence?</summary>
+                                <p class="answer">No, the existence of a sole proprietorship business is dependent on the detailsfe of the 
+                                proprietor.</p>
+                        </details>
+                        <details><summary class="ques">Is minor are allowed to start a sole proprietorship?</summary>
+                                <p class="answer">No, a minor cannot allow starting a sole proprietorship. Only a major whose age 
+                                is above 18 can start a sole proprietorship firm.</p>
+                        </details>
+                        <details><summary class="ques">Is a sole proprietorship allowed to have employees?</summary>
+                                <p class="answer">Yes, a sole proprietor is allowed to hire and have employees.</p>
+                        </details>
+                        
                     </div>
                 </div>
             </div>
@@ -401,15 +396,13 @@
                 <p class="text-footer">
                     Mylegalbusiness.com is an online technology based registration platform to simplify the matters related to Company Registration, Trademark Registration, GST Registration, GST Return, Import Export Code (IEC) ISO Certificate, FSSAI Registration Etc. It is a one stop solution for all kind of Registration or Compliance Requirement.
                 </p>
-                <div class="social">
-                    <ul class="social-footer-list">
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-twitter"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-instagram"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-youtube"></ion-icon></a></li>
-                    </ul>
-                </div>
-            </div>
+                <ul class="social-footer-list">
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-youtube"></ion-icon></a></li>
+                </ul>
+            </div> <br>
             <div class="mid-footer">
                 <div class="nav-footer">
                     <h3>get started</h3>
@@ -427,7 +420,7 @@
                     <p>Send E-mail <br> mylegalbiz20@gmail.com</p> <hr>
                     <p>F-04, Krishna Apra Plaza, <br> above Hdfc Bank, Alpha 1, Greater Noida, <br> Uttar Pradesh 201308</p>
                 </div>
-            </div>    
+            </div>   <br> 
             <div class="cta">
                 <h3>get in touch</h3>
                 <input type="text" placeholder="Number" name="mobile-no."><br>

@@ -5,7 +5,6 @@
 /* ===================main======================= */
 
 .banner {
-    height: 60vh;
     background: url('../../media/private-limited-company-2.jpg') no-repeat center / cover fixed;
 }
 
@@ -13,12 +12,10 @@
 
 
 .checklist {
-    margin: 2rem;
-    padding:1rem;
     color: #4d4d4d;
 }
 .checklist h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 1rem 0;
     color: var(--color);
 }
@@ -33,4 +30,15 @@
 .checklist h4 {
     padding: 0.5rem 0;
     color: #3d3d3d;
+}
+
+/* MEDIA-QUERIES */
+
+@media screen and (max-width: 767px) {
+    .banner {
+        background: url('../../media/private-limited-company-2.jpg') no-repeat center / cover;
+    }
+    .checklist h2 {
+        font-size: 1.4rem;
+    }
 }

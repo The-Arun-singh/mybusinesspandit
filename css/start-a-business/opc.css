@@ -5,17 +5,15 @@
 /* ===================main======================= */
 
 .banner {
-    height: 60vh;
     background: url('../../media/220-SM926184.jpg') no-repeat center / cover fixed;
 }
 
 /* ===================main======================= */
 
-.intro, .advantages-list, .types, .min-requirements {
+/* .intro, .advantages-list, .types, .min-requirements {
     margin: 1rem;
     padding: 2rem 1.5rem 2rem 3rem;
-
-}
+} */
 .intro h2,.advantages-list h2, .types h2, .min-requirements h2 {
     padding: 1rem 0;
     font-size: 1.5rem;
@@ -27,4 +25,14 @@
 }
 .advantages-list h3 {
     color: #515151;
+}
+/* ========================================= */
+
+
+/* MEDIA-QUERIES */
+
+@media screen and (max-width: 767px) {
+    .banner {
+        background: url('../../media/220-SM926184.jpg') no-repeat center / cover;
+    }  
 }

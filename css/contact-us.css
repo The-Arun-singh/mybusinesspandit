@@ -1,10 +1,8 @@
 main {
-    position: relative;
-    inset: 0;
-    width: 100%;
-    height: 50vh;
+    padding: 10rem 0;
     background-image: url(../media/about-bg-2.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 main h1 {
@@ -12,37 +10,33 @@ main h1 {
     text-align: center;
     top: 20%;
     font-size: 42px;
-}
+} 
 
 
 /* ========================================================= */
 
 article {
-    width: 90%;
-    height: 120vh;
-    margin: auto;
+    margin: 4rem auto 8rem;
+    padding: 0 20rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 6rem;
 }
 
 article h2 {
-    font-size: 38px;
-    padding: 10px;
+    font-size: 2rem;
+    padding-bottom: 0.6rem;
     color: var(--color);
 }
 article hr {
     width: 40%;
+    margin-bottom: 0.6rem;
     height: 4px;
-    background-color: black;
+    background-color: var(--color);
     
 }
 .sec {
-    box-sizing: border-box;
-    height: 90%;
-    width: 40%;
-    padding-left: 12%;
-    padding-top: 5%;
+    padding: 2rem 0;
 }
 .sec .icon-1 {
     font-size: 32px;
@@ -70,17 +64,14 @@ article hr {
 
 .aside {
     box-sizing: border-box;
-    height: 90%;
-    width: 45%;
     border: 4px solid transparent;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 2px var(--color);
-    padding: 2% 0%;
-    margin: 20px;
+    padding: 2rem 0;
+    margin: 2rem;
 
 }
 .wrapper {
-    height: 98%;
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
@@ -96,7 +87,7 @@ article hr {
     font-size: 14px;
 }
 .wrapper p {
-    padding: 5px;
+    padding: 0.5rem;
 }
 .wrapper span {
     display: flex;
@@ -107,11 +98,25 @@ article hr {
 }
 #message {
     height: 24%;
-    margin: 10px;
+    margin: 1rem;
 }
 .wrapper button {
     background-color: var(--color);
     color: #fff;
     opacity: 1;
     font-size: 16px;
+}
+/* ======================MEDIA-QUERIES===============/ */
+@media screen and (max-width: 767px) {
+    main {
+        padding: 4rem 0 8rem 0;
+    }
+    
+
+    article {
+        margin: 2rem 0.5rem;
+        padding: 0;
+        gap: 1rem;
+        flex-direction: column;
+    }
 }

@@ -6,15 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/header-footer.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/license-and-registration/iso-reg.css"><!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND2N4EBYRM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-ND2N4EBYRM');
-    </script>
+    <link rel="stylesheet" href="../../css/license-and-registration/iso-reg.css">
+    <script defer src="../../js/index.js"></script>
     <title>CA NilayShukla and Co.</title>
 </head>
 <body>
@@ -24,8 +17,10 @@
     <section class="header">
         <div class="contact-and-social">
             <ul class="contact-list">
-                <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
-                <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
+                <span class="mobile_no">
+                    <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
+                    <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
+                </span>
                 <li><a href="#"><ion-icon class='icon' name="mail"></ion-icon> mail@gmail.com</a></li>
             </ul>
             <ul class="social-list">
@@ -37,13 +32,26 @@
         </div>
     </section>
 
+ 
+
+    
     <nav class="navbar">
         <div class="logo">
             <a href="../../index.html"><img class="logo_img" src="../../media/logo1.png" alt="logo"></a>
         </div>
 
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        
         <ul class="list">
-            <li><a href="#">start a business  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-1">
+                <label for="btn-1" class="first">
+                    start a business  
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/start-a-buisness/sole-proprietorship-registration.html">sole proprietorship registration</a></li>
                     <li><a href="../../html/start-a-buisness/partnership-registration.html">partnership registration</a></li>
@@ -56,7 +64,11 @@
                     <li><a href="../../html/start-a-buisness/section-8-company-registration.html">section 8 company registration</a></li>
                 </ul>
             </li>
-            <li><a href="#">license and registration  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-2">
+                <label for="btn-2" class="second">
+                    license and registration  <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/license-and-registration/gst-registration.html">GST registration</a></li>
                     <li><a href="../../html/license-and-registration/trademark-registration.html">trademark registration</a></li>
@@ -69,20 +81,29 @@
                     <li><a href="../../html/license-and-registration/80g-and-12a-registration.html">80G and 12A registration</a></li>
                 </ul>
             </li>
-            <li><a href="#">auditing and taxation  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-3">
+                <label for="btn-3" class="third">
+                    auditing and taxation  <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/auditing-and-taxation/income-tax.html">income tax</a></li>
                     <li><a href="../../html/auditing-and-taxation/gst.html">GST</a></li>
                     <li><a href="../../html/auditing-and-taxation/statutory-audit.html">statutory audit</a></li>
                 </ul>
             </li>
-            <li><a href="#">legal and compliances  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-4">
+                <label for="btn-4" class="fourth">
+                        legal and compliances <ion-icon name="chevron-down-outline">
+                        </ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/legal-and-compliances/annual-filling-and-all-other-compliances.html">annual filling and all other compliances</a></li>
                 </ul>
             </li>
             <li><a href="../../html/contact-us.html">contact us</a></li>
-            <li><a href="../../html/blog.html">blog</a></li>
+            <li id="blog"><a href="../../html/blog.html">blog</a></li>
         </ul>
 
         <div class="btn">
@@ -91,17 +112,18 @@
     </nav>
 
 
+
+
     <!-- ==================================HEADER-END============================================ -->
 
 
     <!-- ===============================SECTION-START======================================= -->
 
-    <article class="main-body">
+    <article class="main">
 
         
-        <div class="main">
-            <div class="banner"></div>
-            <div class="overlay">
+        <div class="banner">
+            <div class="text">
                 <h1>ISO <br /> Registration</h1>
                 <p>₹2,999.00</p>
                 <button><a href="../../html/legal-and-compliances/annual-filling-and-all-other-compliances.html">Book Now <ion-icon class='icon' name="bookmark-outline"></ion-icon></a></button>
@@ -214,71 +236,69 @@
                 <section class="faqs">
                     <h2>FREQUENTLY ASKED QUESTIONS</h2><hr>
                     <div class="ques-ans">
-                        <ul>
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> What is ISO certification?</span>
-                                <span class="answer"> The ISO certification is a seal of 3rd party body that provides the approval 
-                                    that the company runs on an internationally recognized ISO management system.
-                                </span>
-                            </li>
-                            
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> Why would I need ISO certification?</span>
-                                <span class="answer"> ISO certification is a statement to all the stakeholders, the shareholder of the 
-                                    company, employees of the company those are working upon the set framework to achieve its company’s objectives. By getting the ISO, 
-                                    certification company achieves an increase in credibility and customer 
-                                    confidence.
-                                </span>
-                            </li>
-                            
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> Does an ISO certification work as a permit or a license?</span>
-                                <span class="answer"> An ISO certification only certifies standards, it has got nothing to do with 
-                                    permits and licenses. Even though you might have an ISO certification, you still need government and authority permission, permits and 
-                                    licenses to work your business.
-                                </span>
-                            </li>
-                            
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> Do I have to renew my ISO certificate?</span>
-                                <span class="answer"> Not really, but auditors do conduct surprise checks from time to time to see 
-                                    if your business standards and procedures meet the required ISO mark.
-                                </span>
-                            </li>
-                            
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> What is the list of documents required for ISO registration?</span>
-                                <span class="answer"> The documents required for the ISO registration are PAN Card, Passport size 
-                                    photograph, Copy of Aadhaar Card/Voter ID and two Invoices of sale and 
-                                    purchase.
-                                </span>
-                            </li>
-                            
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> How much time is required to get ISO registration?</span>
-                                <span class="answer"> The process of ISO registration takes a lot of time and efforts. Again, the 
-                                    time required for the ISO registration depends upon the organization. 
-                                    Registration SEVA aims to provide the registration within 8 to 
-                                    10 weeks.
-                                </span>
-                            </li>
-                            
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> No, you have to carefully choose the right accreditation based on the nature 
-                                of your business.</span>
-                                <span class="answer"> No, you have to carefully choose the right accreditation based on the nature 
-                                    of your business.
-                                </span>
-                            </li>
-                            
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> Who gives ISO certification?</span>
-                                <span class="answer"> People often say “ISO Certified” but ISO does not issue certificates or 
-                                    certify individual companies to any standard. So who can Grant ISO 9001 Certification? They are issued by certification/registration 
-                                    bodies (also called Registrars or CB’s), which are independent of ISO.
-                                </span>
-                            </li>
-                        </ul>
+                        <details>
+                            <summary class="ques">What is ISO certification?</summary>
+                            <p class="answer"> The ISO certification is a seal of 3rd party body that provides the approval 
+                                that the company runs on an internationally recognized ISO management system.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">Why would I need ISO certification?</summary>
+                            <p class="answer"> ISO certification is a statement to all the stakeholders, the shareholder of the 
+                                company, employees of the company those are working upon the set framework to achieve its company’s objectives. By getting the ISO, 
+                                certification company achieves an increase in credibility and customer 
+                                confidence.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">Does an ISO certification work as a permit or a license?</summary>
+                            <p class="answer"> An ISO certification only certifies standards, it has got nothing to do with 
+                                permits and licenses. Even though you might have an ISO certification, you still need government and authority permission, permits and 
+                                licenses to work your business.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">Do I have to renew my ISO certificate?</summary>
+                            <p class="answer"> Not really, but auditors do conduct surprise checks from time to time to see 
+                                if your business standards and procedures meet the required ISO mark.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">What is the list of documents required for ISO registration?</summary>
+                            <p class="answer"> The documents required for the ISO registration are PAN Card, Passport size 
+                                photograph, Copy of Aadhaar Card/Voter ID and two Invoices of sale and 
+                                purchase.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">How much time is required to get ISO registration?</summary>
+                            <p class="answer"> The process of ISO registration takes a lot of time and efforts. Again, the 
+                                time required for the ISO registration depends upon the organization. 
+                                Registration SEVA aims to provide the registration within 8 to 
+                                10 weeks.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">No, you have to carefully choose the right accreditation based on the nature 
+                            of your business.</summary>
+                            <p class="answer"> No, you have to carefully choose the right accreditation based on the nature 
+                                of your business.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">Who gives ISO certification?</summary>
+                            <p class="answer"> People often say “ISO Certified” but ISO does not issue certificates or 
+                                certify individual companies to any standard. So who can Grant ISO 9001 Certification? They are issued by certification/registration 
+                                bodies (also called Registrars or CB’s), which are independent of ISO.
+                            </p>
+                        </details>
                     </div>
                 </section>
 
@@ -305,7 +325,7 @@
 
 
     <!-- ==================================FOOTER-START========================================== -->
-
+ 
     <footer>
         <div class="footer">
             <div class="left-footer">
@@ -313,15 +333,13 @@
                 <p class="text-footer">
                     Mylegalbusiness.com is an online technology based registration platform to simplify the matters related to Company Registration, Trademark Registration, GST Registration, GST Return, Import Export Code (IEC) ISO Certificate, FSSAI Registration Etc. It is a one stop solution for all kind of Registration or Compliance Requirement.
                 </p>
-                <div class="social">
-                    <ul class="social-footer-list">
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-twitter"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-instagram"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-youtube"></ion-icon></a></li>
-                    </ul>
-                </div>
-            </div>
+                <ul class="social-footer-list">
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-youtube"></ion-icon></a></li>
+                </ul>
+            </div> <br>
             <div class="mid-footer">
                 <div class="nav-footer">
                     <h3>get started</h3>
@@ -339,7 +357,7 @@
                     <p>Send E-mail <br> mylegalbiz20@gmail.com</p> <hr>
                     <p>F-04, Krishna Apra Plaza, <br> above Hdfc Bank, Alpha 1, Greater Noida, <br> Uttar Pradesh 201308</p>
                 </div>
-            </div>    
+            </div>   <br> 
             <div class="cta">
                 <h3>get in touch</h3>
                 <input type="text" placeholder="Number" name="mobile-no."><br>

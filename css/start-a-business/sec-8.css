@@ -5,16 +5,15 @@
 /* ===================main======================= */
 
 .banner {
-    height: 60vh;
     background: url('../../media/220-SM768078.jpg') no-repeat center / cover fixed;
 }
 
 /* ===================main======================= */
 
-.funding {
+/* .funding {
     margin: 3rem 2rem;
     padding: 1rem;
-}
+} */
 .funding h2 {
     font-size: 2rem;
     color: #16163F;
@@ -39,4 +38,23 @@
 .funding li {
     padding: 0.5rem;
     color: #575757;
+    list-style-position: inside;
+}
+
+/* ========================================= */
+
+
+/* MEDIA-QUERIES */
+
+@media screen and (max-width: 767px) {
+    .banner {
+        background: url('../../media/220-SM768078.jpg') no-repeat center / cover;
+    }
+    .funding h2 {
+        font-size: 1.4rem;
+        color: #16163F;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 1rem 1rem 1rem; 
+    }
 }

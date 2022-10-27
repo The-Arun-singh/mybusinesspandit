@@ -5,7 +5,6 @@
 /* ===================main======================= */
 
 .banner {
-    height: 60vh;
     background: url('../../media/FSSAI-REGISTRATION-1.jpg') no-repeat center / cover fixed;
 }
 
@@ -45,16 +44,11 @@
 
 
 .banner-testimonial {
-    height: 60vh;
-    background: url('../../media/FSSAI-FOOTER.jpg') no-repeat top / cover fixed;
+    background: url('../../media/FSSAI-FOOTER.jpg') no-repeat center / cover fixed;
 }
 .overlay-testimonial {
-    position: absolute;
+    padding: 1rem 0;
     background: hsl(240, 48%, 17% , 0.9);
-    top: 0;
-    left: 0;
-    height: 60vh;
-    width: 100%;
     color: #fff;
 }
 .overlay-testimonial>hr {
@@ -75,9 +69,7 @@
 .testimonials-main {
     text-align: center;
     display: flex;
-    margin: 1rem auto;
-    width: 70%;
-    height: 55%;
+    margin: 1rem 13rem;
     padding: 1rem;
 }
 
@@ -144,4 +136,34 @@
 }
 .current {
     background-color: var(--color);
+}
+
+
+/* MEDIA-QUERIES */
+
+@media screen and ( max-width: 767px) {
+    .banner {
+        background: url('../../media/FSSAI-REGISTRATION-1.jpg') no-repeat center / contain;
+    }
+    .banner-testimonial {
+        background: url('../../media/FSSAI-FOOTER.jpg') no-repeat center / cover;
+    }
+    .testimonials-main {
+        margin: 0;
+        padding: 1rem 0;
+    }
+    .slide {
+        padding: 1rem 0;
+        margin: auto 0;
+    }
+    .current-slide {
+        display: none;
+    }
+    .current-sm {
+        display: unset;
+        width: 100%;
+    }
+    .testimonials-btn {
+        margin: auto 0.5rem;
+    }
 }

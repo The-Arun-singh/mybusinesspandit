@@ -6,15 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/header-footer.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/start-a-business/micro-finance.css"><!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND2N4EBYRM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-ND2N4EBYRM');
-    </script>
+    <link rel="stylesheet" href="../../css/start-a-business/micro-finance.css">
+    <script defer src="../../js/index.js"></script>
     <title>CA NilayShukla and Co.</title>
 </head>
 <body>
@@ -24,8 +17,10 @@
     <section class="header">
         <div class="contact-and-social">
             <ul class="contact-list">
-                <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
-                <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
+                <span class="mobile_no">
+                    <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
+                    <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
+                </span>
                 <li><a href="#"><ion-icon class='icon' name="mail"></ion-icon> mail@gmail.com</a></li>
             </ul>
             <ul class="social-list">
@@ -37,13 +32,26 @@
         </div>
     </section>
 
+
+
+    
     <nav class="navbar">
         <div class="logo">
             <a href="../../index.html"><img class="logo_img" src="../../media/logo1.png" alt="logo"></a>
         </div>
 
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        
         <ul class="list">
-            <li><a href="#">start a business  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-1">
+                <label for="btn-1" class="first">
+                    start a business  
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/start-a-buisness/sole-proprietorship-registration.html">sole proprietorship registration</a></li>
                     <li><a href="../../html/start-a-buisness/partnership-registration.html">partnership registration</a></li>
@@ -56,7 +64,11 @@
                     <li><a href="../../html/start-a-buisness/section-8-company-registration.html">section 8 company registration</a></li>
                 </ul>
             </li>
-            <li><a href="#">license and registration  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-2">
+                <label for="btn-2" class="second">
+                    license and registration  <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/license-and-registration/gst-registration.html">GST registration</a></li>
                     <li><a href="../../html/license-and-registration/trademark-registration.html">trademark registration</a></li>
@@ -69,20 +81,29 @@
                     <li><a href="../../html/license-and-registration/80g-and-12a-registration.html">80G and 12A registration</a></li>
                 </ul>
             </li>
-            <li><a href="#">auditing and taxation  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-3">
+                <label for="btn-3" class="third">
+                    auditing and taxation  <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/auditing-and-taxation/income-tax.html">income tax</a></li>
                     <li><a href="../../html/auditing-and-taxation/gst.html">GST</a></li>
                     <li><a href="../../html/auditing-and-taxation/statutory-audit.html">statutory audit</a></li>
                 </ul>
             </li>
-            <li><a href="#">legal and compliances  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-4">
+                <label for="btn-4" class="fourth">
+                        legal and compliances <ion-icon name="chevron-down-outline">
+                        </ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/legal-and-compliances/annual-filling-and-all-other-compliances.html">annual filling and all other compliances</a></li>
                 </ul>
             </li>
             <li><a href="../../html/contact-us.html">contact us</a></li>
-            <li><a href="../../html/blog.html">blog</a></li>
+            <li id="blog"><a href="../../html/blog.html">blog</a></li>
         </ul>
 
         <div class="btn">
@@ -91,17 +112,18 @@
     </nav>
 
 
+
+
     <!-- ==================================HEADER-END============================================ -->
 
 
         <!-- ===============================SECTION-START======================================= -->
 
-    <div class='main-body'>
+    <div class='main'>
 
 
-        <div class="main">
-            <div class="banner"></div>
-            <div class="overlay">
+        <div class="banner">
+            <div class="text">
                 <h1>Section 8 Micro finance company <br /> Registration</h1>
                 <button><a href="../../html/legal-and-compliances/annual-filling-and-all-other-compliances.html">Book Now <ion-icon class='icon' name="bookmark-outline"></ion-icon></a></button>
             </div>
@@ -253,15 +275,13 @@
                 <p class="text-footer">
                     Mylegalbusiness.com is an online technology based registration platform to simplify the matters related to Company Registration, Trademark Registration, GST Registration, GST Return, Import Export Code (IEC) ISO Certificate, FSSAI Registration Etc. It is a one stop solution for all kind of Registration or Compliance Requirement.
                 </p>
-                <div class="social">
-                    <ul class="social-footer-list">
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-twitter"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-instagram"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-youtube"></ion-icon></a></li>
-                    </ul>
-                </div>
-            </div>
+                <ul class="social-footer-list">
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-youtube"></ion-icon></a></li>
+                </ul>
+            </div> <br>
             <div class="mid-footer">
                 <div class="nav-footer">
                     <h3>get started</h3>
@@ -279,7 +299,7 @@
                     <p>Send E-mail <br> mylegalbiz20@gmail.com</p> <hr>
                     <p>F-04, Krishna Apra Plaza, <br> above Hdfc Bank, Alpha 1, Greater Noida, <br> Uttar Pradesh 201308</p>
                 </div>
-            </div>    
+            </div>   <br> 
             <div class="cta">
                 <h3>get in touch</h3>
                 <input type="text" placeholder="Number" name="mobile-no."><br>

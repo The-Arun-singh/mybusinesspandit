@@ -5,8 +5,15 @@
 /* ===================main======================= */
 
 .banner {
-    height: 60vh;
     background: url('../../media/220-SM905744.jpg') no-repeat center / cover fixed;
 }
 
 /* ===================main======================= */
+ 
+/* MEDIA-QUERIES */
+
+@media screen and ( max-width: 767px) {
+    .banner {
+        background: url('../../media/220-SM905744.jpg') no-repeat center / cover;
+    }
+}

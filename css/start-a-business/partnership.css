@@ -4,7 +4,6 @@
 /* ===================main======================= */
 
 .banner {
-    height: 60vh;
     background: url('../../media/220-SM938837.jpg') no-repeat center / cover fixed;
 }
 
@@ -14,7 +13,7 @@
 
 .benefits {
     text-align: center;
-    margin: 4rem 1rem 6rem 2rem;
+    /* margin: 4rem 1rem 6rem 2rem; */
 }
 .benefits h2{
     color: var(--color);
@@ -26,11 +25,15 @@
 }
 
 
-
-
-
-
-
-
-
 /* ==================article======================= */
+
+/* ========================================= */
+
+
+/* MEDIA-QUERIES */
+
+@media screen and (max-width: 767px) {
+    .banner {
+        background: url('../../media/220-SM938837.jpg') no-repeat center / cover;
+    }
+}

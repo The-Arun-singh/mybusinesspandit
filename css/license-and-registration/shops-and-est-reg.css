@@ -5,17 +5,16 @@
 /* ===================main======================= */
 
 .banner {
-    height: 60vh;
     background: url('../../media/private-limited-company-2.jpg') no-repeat center / cover fixed;
 }
 
 /* ===================main======================= */
 
 
-.eligibility {
+/* .eligibility {
     margin: 2rem;
     padding: 1rem;
-}
+} */
 .eligibility h2 {
     text-align: center;
     font-size: 1.8rem;
@@ -33,4 +32,14 @@
 }
 .eligibility p {
     color: #4d4d4d;
+}
+
+/* ========================================================== */
+
+/* MEDIA-QUERIES */
+
+@media screen and (max-width: 767px) {
+    .banner {
+        background: url('../../media/private-limited-company-2.jpg') no-repeat center / cover;
+    }    
 }

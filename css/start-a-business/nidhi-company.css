@@ -5,7 +5,6 @@
 /* ===================main======================= */
 
 .banner {
-    height: 60vh;
     background: url('../../media/Private-limited-company-Mylegalbusiness.jpg') no-repeat center / cover fixed;
 }
 
@@ -13,9 +12,8 @@
 
 
 .prohibition {
-    margin: 2rem;
+    padding-left: 1rem;
     list-style-position: inside;
-    padding: 1rem;
 }
 .prohibition h2 {
     font-size: 1.8rem;
@@ -32,4 +30,15 @@
     font-size: 1.1rem;
     color: #575757;
     padding: 0.1rem;
+}
+
+/* ========================================= */
+
+
+/* MEDIA-QUERIES */
+
+@media screen and (max-width: 767px) {
+    .banner {
+        background: url('../../media/Private-limited-company-Mylegalbusiness.jpg') no-repeat center / cover;
+    }    
 }

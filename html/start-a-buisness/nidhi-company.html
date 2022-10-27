@@ -6,15 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/header-footer.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/start-a-business/nidhi-company.css"><!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND2N4EBYRM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-ND2N4EBYRM');
-    </script>
+    <link rel="stylesheet" href="../../css/start-a-business/nidhi-company.css">
+    <script defer src="../../js/index.js"></script>
     <title>CA NilayShukla and Co.</title>
 </head>
 <body>
@@ -24,8 +17,10 @@
     <section class="header">
         <div class="contact-and-social">
             <ul class="contact-list">
-                <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
-                <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
+                <span class="mobile_no">
+                    <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
+                    <li><a href="#"><ion-icon class='icon' name="call"></ion-icon> +91-xxxxxxxxxx</a></li>
+                </span>
                 <li><a href="#"><ion-icon class='icon' name="mail"></ion-icon> mail@gmail.com</a></li>
             </ul>
             <ul class="social-list">
@@ -37,13 +32,26 @@
         </div>
     </section>
 
+
+
+    
     <nav class="navbar">
         <div class="logo">
             <a href="../../index.html"><img class="logo_img" src="../../media/logo1.png" alt="logo"></a>
         </div>
 
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        
         <ul class="list">
-            <li><a href="#">start a business  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-1">
+                <label for="btn-1" class="first">
+                    start a business  
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/start-a-buisness/sole-proprietorship-registration.html">sole proprietorship registration</a></li>
                     <li><a href="../../html/start-a-buisness/partnership-registration.html">partnership registration</a></li>
@@ -56,7 +64,11 @@
                     <li><a href="../../html/start-a-buisness/section-8-company-registration.html">section 8 company registration</a></li>
                 </ul>
             </li>
-            <li><a href="#">license and registration  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-2">
+                <label for="btn-2" class="second">
+                    license and registration  <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/license-and-registration/gst-registration.html">GST registration</a></li>
                     <li><a href="../../html/license-and-registration/trademark-registration.html">trademark registration</a></li>
@@ -69,20 +81,29 @@
                     <li><a href="../../html/license-and-registration/80g-and-12a-registration.html">80G and 12A registration</a></li>
                 </ul>
             </li>
-            <li><a href="#">auditing and taxation  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-3">
+                <label for="btn-3" class="third">
+                    auditing and taxation  <ion-icon name="chevron-down-outline"></ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/auditing-and-taxation/income-tax.html">income tax</a></li>
                     <li><a href="../../html/auditing-and-taxation/gst.html">GST</a></li>
                     <li><a href="../../html/auditing-and-taxation/statutory-audit.html">statutory audit</a></li>
                 </ul>
             </li>
-            <li><a href="#">legal and compliances  <ion-icon name="chevron-down-outline"></ion-icon></a></ion-icon>
+            <li>
+                <input type="checkbox" name="sublist" id="btn-4">
+                <label for="btn-4" class="fourth">
+                        legal and compliances <ion-icon name="chevron-down-outline">
+                        </ion-icon>
+                </label>
                 <ul class="sublist">
                     <li><a href="../../html/legal-and-compliances/annual-filling-and-all-other-compliances.html">annual filling and all other compliances</a></li>
                 </ul>
             </li>
             <li><a href="../../html/contact-us.html">contact us</a></li>
-            <li><a href="../../html/blog.html">blog</a></li>
+            <li id="blog"><a href="../../html/blog.html">blog</a></li>
         </ul>
 
         <div class="btn">
@@ -91,19 +112,21 @@
     </nav>
 
 
+ 
+
     <!-- ==================================HEADER-END============================================ -->
 
 
     <!-- ===============================SECTION-START======================================= -->
-    <div class="main-body">
-
-
+    
         <div class="main">
-            <div class="banner"></div>
-            <div class="overlay">
-                <h1>Nidhi Company  <br /> Registration</h1>
-                <p>₹ 9,999.00 <small>+Govt. Fees Extra</small></p>
-                <button><a href="../../html/legal-and-compliances/annual-filling-and-all-other-compliances.html">Book Now <ion-icon class='icon' name="bookmark-outline"></ion-icon></a></button>
+
+            <div class="banner">
+                <div class="text">
+                    <h1>Nidhi Company  <br /> Registration</h1>
+                    <p>₹ 9,999.00 <small>+Govt. Fees Extra</small></p>
+                    <button><a href="../../html/legal-and-compliances/annual-filling-and-all-other-compliances.html">Book Now <ion-icon class='icon' name="bookmark-outline"></ion-icon></a></button>
+                </div>
             </div>
         
         <div class="article">
@@ -225,128 +248,117 @@
                 <div class="faqs">
                     <h2>FREQUENTLY ASKED QUESTIONS</h2><hr>
                     <div class="ques-ans">
-                        <ul>
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> WHAT PROVISIONS ARE APPLICABLE TO NIDHI COMPANIES?</span>
-                                <span class="answer">
-                                    Following provisions are applicable to Nidhi Companies.
+                        <details>
+                            <summary class="ques">WHAT PROVISIONS ARE APPLICABLE TO NIDHI COMPANIES?</summary>
+                            <p class="answer">
+                                Following provisions are applicable to Nidhi Companies.
+                            <ul>
+                                <li>As they are incorporated into the nature of Public Company so rules and regulations of Companies Act, 2013 are applicable.</li>
+                                <li>RBI provisions related to Interest rate payable on deposit are applicable to Nidhi Companies. But the core provisions of RBI 
+                                    are not applicable to Nidhi Companies as RBI has exempted the Nidhi Companies from the same.</li>
+                                <li>Nidhi Rules, 2014.</li>
+                            </ul></p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">WHAT ARE THE REQUIREMENTS FOR REGISTRATION OF NIDHI COMPANY IN INDIA?</summary>
+                            <p class="answer">
+                                As to incorporate a Nidhi Company it is to be registered as a 
+                                Public Limited Company. So, to incorporate a Nidhi Company it is necessary 
+                                to fulfill following criteria:
                                 <ul>
-                                    <li>As they are incorporated into the nature of Public Company so rules and regulations of Companies Act, 2013 are applicable.</li>
-                                    <li>RBI provisions related to Interest rate payable on deposit are applicable to Nidhi Companies. But the core provisions of RBI 
-                                        are not applicable to Nidhi Companies as RBI has exempted the Nidhi Companies from the same.</li>
-                                    <li>Nidhi Rules, 2014.</li>
-                                </ul></span>
-                            </li>
-                            
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> WHAT ARE THE REQUIREMENTS FOR REGISTRATION OF NIDHI COMPANY IN INDIA?</span>
-                                <span class="answer">
-                                    As to incorporate a Nidhi Company it is to be registered as a 
-                                    Public Limited Company. So, to incorporate a Nidhi Company it is necessary 
-                                    to fulfill following criteria:
-                                    <ul>
-                                        <li>It should have at least 3 Directors.</li>
-                                        <li>It should have at least 7 Members.</li>
-                                        <li>The main objective to be written in the MOA should be to cultivate the habit of thrift and savings among its members. 
-                                            And it can accept deposits and lend money only to its members and shall work for the mutual benefit of its members.</li>
-                                    </ul>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> WHAT ARE POST INCORPORATION REQUIREMENT OF A NIDHI COMPANY?</span>
-                                <span class="answer">
-                                    Once the Nidhi Company is incorporated it must fulfill the following requirements:
-                                    <ul>
-                                        <li>It must have at least 200 members/shareholders.</li>
-                                        <li>Minimum Net Owned Fund should be Rs. 10 Lakhs.</li>
-                                        <li>Unencumbered term deposit must be at least 10% of the term deposit.</li>
-                                        <li>The ratio of Net Owned Fund to term deposit should not be less than 1:20.</li> 
-                                    </ul>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> ARE THE DEPOSITS WITH NIDHI COMPANY SAFE AND SECURED?</span>
-                                <span class="answer">
-                                    <p> Yes, the Deposits with such companies are safe and secure because the 
-                                    Ministry of Corporate Affairs and Reserve Bank of India has framed rules and regulations to ensure the safety and security of 
-                                    Deposits. And the Nidhi Company compulsorily abide by the rules of Central 
-                                    Government.</p>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> HOW THE NIDHI COMPANY UTILIZES THE FUNDS PROCURED BY IT?</span>
-                                <span class="answer">
-                                    <p> The Nidhi Company 
-                                    uses the funds in lending to shareholders as per 
-                                    Nidhi Rules. It lends such money in the form of small loan for business 
-                                    and finance.</p>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> WHO CAN BECOME THE SHAREHOLDER/MEMBER OF NIDHI COMPANY?</span>
-                                <span class="answer">
-                                    <p> Any person who is above 18 years of age as per the standard age proof 
-                                    can become a member of the Nidhi Companies. The person desirous of 
-                                    becoming a member should have valid ID Proof and Address Proof.</p>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> ON WHAT CONDITION NIDHI COMPANY CAN PROVIDE A LOAN TO ITS MEMBERS?</span>
-                                <span class="answer">
-                                    <p> Nidhi can provide loans to its members only after the members have 
-                                    given/provided some securities like gold, silver jewelry or any type of 
-                                    financial securities against the loan.</p>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> CAN ANOTHER COMPANY BE A SHAREHOLDER IN A NIDHI LIMITED COMPANY?</span>
-                                <span class="answer">
-                                    <p> Yes, another can
-                                     be a shareholder in a Nidhi company.</p>
-                                </span>
-                            </li>
-                            
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> CAN A DIRECTOR IN A NIDHI COMPANY BE A SALARIED PERSON?</span>
-                                <span class="answer">
-                                    <p> Yes, a salaried person can become a director in a Nidhi company. 
-                                    There are no legal hassles in this but one may have to go through their 
-                                    employment agreement if it contains any restrictions.</p>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> HOW LONG IS THE COMPANY VALID FOR?</span>
-                                <span class="answer">
-                                    <p> Once a company gets incorporated, it is active and in-existence for as 
-                                    long as the annual compliances are met with regularly. In a scenario where the annual compliances are not complied with, the 
-                                    company becomes a dormant company and then it may be struck off from the registrar after a period of time. A struck-off 
-                                    company can be revived for a period of up to 20 years.</p>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> IS AN OFFICE SPACE REQUIRED TO OPEN A COMPANY?</span>
-                                <span class="answer">
-                                    <p>No, one can open a company even at their residential address. There is no 
-                                    legal requirement to have a commercial place to open up a company. </p>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="ques"><ion-icon name="add-outline"></ion-icon> CAN ONE OPEN AN ASSET FINANCE COMPANY BY OPENING A NIDHI LIMITED?</span>
-                                <span class="answer">
-                                    <p> No, as per the constraints mentioned in the Nidhi rules and regulations, 
-                                    no Nidhi company can do the business of asset.</p>
-                                </span>
-                            </li>
-                        </ul>
+                                    <li>It should have at least 3 Directors.</li>
+                                    <li>It should have at least 7 Members.</li>
+                                    <li>The main objective to be written in the MOA should be to cultivate the habit of thrift and savings among its members. 
+                                        And it can accept deposits and lend money only to its members and shall work for the mutual benefit of its members.</li>
+                                </ul>
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">WHAT ARE POST INCORPORATION REQUIREMENT OF A NIDHI COMPANY?</summary>
+                            <p class="answer">
+                                Once the Nidhi Company is incorporated it must fulfill the following requirements:
+                                <ul>
+                                    <li>It must have at least 200 members/shareholders.</li>
+                                    <li>Minimum Net Owned Fund should be Rs. 10 Lakhs.</li>
+                                    <li>Unencumbered term deposit must be at least 10% of the term deposit.</li>
+                                    <li>The ratio of Net Owned Fund to term deposit should not be less than 1:20.</li> 
+                                </ul>
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">ARE THE DEPOSITS WITH NIDHI COMPANY SAFE AND SECURED?</summary>
+                            <p class="answer">
+                            Yes, the Deposits with such companies are safe and secure because the 
+                                Ministry of Corporate Affairs and Reserve Bank of India has framed rules and regulations to ensure the safety and security of 
+                                Deposits. And the Nidhi Company compulsorily abide by the rules of Central 
+                                Government.    </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">HOW THE NIDHI COMPANY UTILIZES THE FUNDS PROCURED BY IT?</summary>
+                            <p class="answer">
+                            The Nidhi Company 
+                                uses the funds in lending to shareholders as per 
+                                Nidhi Rules. It lends such money in the form of small loan for business 
+                                and finance.    </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">WHO CAN BECOME THE SHAREHOLDER/MEMBER OF NIDHI COMPANY?</summary>
+                            <p class="answer">
+                            Any person who is above 18 years of age as per the standard age proof 
+                                can become a member of the Nidhi Companies. The person desirous of 
+                                becoming a member should have valid ID Proof and Address Proof.    </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">ON WHAT CONDITION NIDHI COMPANY CAN PROVIDE A LOAN TO ITS MEMBERS?</summary>
+                            <p class="answer">
+                            Nidhi can provide loans to its members only after the members have 
+                                given/provided some securities like gold, silver jewelry or any type of 
+                                financial securities against the loan.    </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">CAN ANOTHER COMPANY BE A SHAREHOLDER IN A NIDHI LIMITED COMPANY?</summary>
+                            <p class="answer">
+                            Yes, another can
+                                    be a shareholder in a Nidhi company.    </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">CAN A DIRECTOR IN A NIDHI COMPANY BE A SALARIED PERSON?</summary>
+                            <p class="answer">
+                            Yes, a salaried person can become a director in a Nidhi company. 
+                                There are no legal hassles in this but one may have to go through their 
+                                employment agreement if it contains any restrictions.    </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">HOW LONG IS THE COMPANY VALID FOR?</summary>
+                            <p class="answer">
+                            Once a company gets incorporated, it is active and in-existence for as 
+                                long as the annual compliances are met with regularly. In a scenario where the annual compliances are not complied with, the 
+                                company becomes a dormant company and then it may be struck off from the registrar after a period of time. A struck-off 
+                                company can be revived for a period of up to 20 years.    </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">IS AN OFFICE SPACE REQUIRED TO OPEN A COMPANY?</summary>
+                            <p class="answer">
+                            No, one can open a company even at their residential address. There is no 
+                                legal requirement to have a commercial place to open up a company.     </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="ques">CAN ONE OPEN AN ASSET FINANCE COMPANY BY OPENING A NIDHI LIMITED?</summary>
+                            <p class="answer">
+                            No, as per the constraints mentioned in the Nidhi rules and regulations, 
+                                no Nidhi company can do the business of asset.    </p>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -364,6 +376,7 @@
             </div>
         </div>
     </div>
+    
 
     <!-- ===============================SECTION-END======================================= -->
 
@@ -378,15 +391,13 @@
                 <p class="text-footer">
                     Mylegalbusiness.com is an online technology based registration platform to simplify the matters related to Company Registration, Trademark Registration, GST Registration, GST Return, Import Export Code (IEC) ISO Certificate, FSSAI Registration Etc. It is a one stop solution for all kind of Registration or Compliance Requirement.
                 </p>
-                <div class="social">
-                    <ul class="social-footer-list">
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-twitter"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-instagram"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class='footer-icon' name="logo-youtube"></ion-icon></a></li>
-                    </ul>
-                </div>
-            </div>
+                <ul class="social-footer-list">
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class='footer-icon' name="logo-youtube"></ion-icon></a></li>
+                </ul>
+            </div> <br>
             <div class="mid-footer">
                 <div class="nav-footer">
                     <h3>get started</h3>
@@ -404,7 +415,7 @@
                     <p>Send E-mail <br> mylegalbiz20@gmail.com</p> <hr>
                     <p>F-04, Krishna Apra Plaza, <br> above Hdfc Bank, Alpha 1, Greater Noida, <br> Uttar Pradesh 201308</p>
                 </div>
-            </div>    
+            </div>   <br> 
             <div class="cta">
                 <h3>get in touch</h3>
                 <input type="text" placeholder="Number" name="mobile-no."><br>
