@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -34,6 +34,7 @@
     color: var(--color);
     padding: 0 7px;
     text-decoration: none;
+    text-transform: lowercase;
 }
 .icon {
     font-size: large;
@@ -107,15 +108,23 @@
 }
 .sublist {
     display:none;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
+    /* box-sizing: border-box; */
+    top: 0rem;
     left: 0;
     width: max-content;
     margin: 3rem 0;
     border-radius: 4px;
     background-color: var(--color);
 }
+.sublist::before {
+    position: absolute;
+    content: "";
+    top: -2rem;
+    left: 0;
+    width: 100%;
+    height: 2.1rem;
+
+} 
 .sublist>li {
     box-sizing: inherit;
     list-style: none;
@@ -130,10 +139,6 @@
     width: 100%;
     padding: 0.1rem;
 }
-
-
-
-
 
 
 .btn:hover {
@@ -234,11 +239,17 @@ footer hr {
 }
 .contact-footer p {
     text-align: left;
-    padding: 0 0 0 8px;
+    padding: 0.2rem 0 0.2rem 8px;
+}
+.contact-footer p>a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
 .contact-footer hr {
     width: 70%;
     margin-left: 0;
+    background-color: transparent;
 }
 .nav-footer {
     width: 40%;
@@ -484,7 +495,14 @@ footer hr {
 
 
 @media screen and (min-width: 1024px) {
-    .list> li > input:checked ~ .sublist {
+    /* .list> li> label:hover +.sublist, 
+    .list> li> label:active +.sublist, 
+    .list> li> label:focus +.sublist {
+        display: unset;
+        position: absolute;
+    } */
+    .list li:hover .sublist {
         display: block;
+        position: absolute;
     }
 }
