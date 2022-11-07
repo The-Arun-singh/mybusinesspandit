@@ -28,7 +28,7 @@ console.log(newFLogo.innerHTML);
 
 
 
-title[0].innerText = "JSK COMPLIANCE & MANAGMENT SERVICES";
+title[0].innerText = "MY LEGAL ADDA";
 
 hLogo.innerHTML = "<img class=\"logo_img\" src=\"../../../media/logo2.webp\" alt=\"logo\">"
 
