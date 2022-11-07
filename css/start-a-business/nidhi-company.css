@@ -5,7 +5,8 @@
 /* ===================main======================= */
 
 .banner {
-    background: url('../../media/Private-limited-company-Mylegalbusiness.jpg') no-repeat center / cover fixed;
+    background: url('../../media/nidhi(1).jpg') no-repeat right;
+    background-size: contain;
 }
 
 /* ===================main======================= */

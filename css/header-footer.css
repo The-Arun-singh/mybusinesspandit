@@ -1,13 +1,16 @@
 :root {
-    --color: #16163f;
+    --color: rgb(37, 150, 190);
+    --enquire-now: rgba(245,168,74,255);
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 16px;
+    text-align: justify !important;
+    font-family: 'Book Antiqua', sans-serif;
 }
-
+/* "Bookman Old Style",,'Century Gothic' */
 
 /* ===========================<HEADER>========================== */
 
@@ -26,6 +29,9 @@
 }
 .mobile_no {
     display: flex;
+}
+.contact-list {
+    margin-left: 4rem;
 }
 .contact-list li a{
     align-items: center;    
@@ -52,7 +58,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
-    padding: 0.2rem 1rem;
+    padding: 0rem 1rem 0 0;
     background-color: var(--color);
 }
 #blog {
@@ -60,14 +66,17 @@
 }
 
 .logo_img {
-    width: 3rem;
-    border: 2px solid black;
-    border-radius: 50%;
-    margin-top: 1px;
+    width: 100%;
+    /* border: 2px solid black; */
+    /* border-radius: 50%; */
+    margin: 0;
+    padding: 0.2rem;
 }
 .logo {
-    width: 6%;
+    width: 15%;
     text-align: center;
+    background-color: #fff;
+    padding: 0 0.5rem;
 }
 .toggler, .hamburger {
     /* visibility: hidden; */
@@ -79,6 +88,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.list .first {
+    text-transform: none;
 }
 .list> li {
     position: relative;
@@ -94,6 +106,8 @@
     padding: 0.3rem;
     border-radius: 4px;
     text-decoration: none;
+    font-weight: bold;
+    text-align: left !important;
 }
 .list >li> label:hover, .list > li > a:hover, .sublist> li> a:hover {
     background-color: #fff;
@@ -195,15 +209,19 @@ footer hr {
 .left-footer hr {
     display: none;
 }
-.logo-footer {
-    width: 120px;
-    height: 60px;
+.footer-logo {
+    width: 78%;
+    height: 20%;
     border-radius: 5px;
+    margin-left: 1rem; 
+    padding: 1rem;
+    background-color: #fff;
 }
 .text-footer {
     color: #fff;
     text-align: left;
     margin: 1rem;
+    text-transform: initial;
 }
 .social-footer-list {
     margin: 10px 0 0 10px;
@@ -303,6 +321,10 @@ footer hr {
 .copyright a {
     text-decoration: none;
     color: rgb(55, 72, 255);
+}
+.copyright p {
+    text-align: center !important;
+    text-transform: none !important;
 }
 .copyright a:hover {
     text-shadow: 0 0 1px var(--color);
