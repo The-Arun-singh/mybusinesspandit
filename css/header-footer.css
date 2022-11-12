@@ -34,15 +34,15 @@
     margin-left: 4rem;
     font-weight: bold;
 }
-.contact-list li a{
-    align-items: center;    
-}
 .contact-list li a, .social-list li a {
-    /* color: var(--color); */
-    color: red;
+    color: var(--color);
     padding: 0 7px;
     text-decoration: none;
     text-transform: lowercase;
+}
+.contact-list li a{
+    align-items: center;  
+    color: red;  
 }
 .icon {
     font-size: large;
