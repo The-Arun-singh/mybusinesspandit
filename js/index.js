@@ -139,8 +139,8 @@ body.insertAdjacentHTML("beforeend", `
                 </div>
                 <div class="contact-footer">
                     <h3>contact</h3>
-                    <p>Mon - Sat (10Am-7Pm) <br> +91-8750144044</p> <hr>
-                    <p>Send E-mail <br> <a href="mailto:${email}">${email}.com</a></p> <hr>
+                    <p>Mon - Sat (10AM-7PM) <br> +91-8750144044</p> <hr>
+                    <p>Send E-mail <br> <a href="mailto:${email}">${email}</a></p> <hr>
                     <p>Madra Khel, Anandpuram colony, Shahjahanpur Uttar Pradesh 242001</p>
                 </div>
             </div>   <br> 
@@ -152,7 +152,7 @@ body.insertAdjacentHTML("beforeend", `
         </div>
         <hr>
         <div class="copyright">
-            <p> All Rights Reserved. Copyright@2020-21. Powered by <a href="/index.html">JSK COMPLIANCE & MANAGMENT SERVICES</a></p>
+            <p> All Rights Reserved. Copyright@2020-21. Powered by <a href="/index.html">MY LEGAL ADDA</a></p>
         </div>
     </footer>
 `);
