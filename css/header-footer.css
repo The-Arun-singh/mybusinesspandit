@@ -32,12 +32,14 @@
 }
 .contact-list {
     margin-left: 4rem;
+    font-weight: bold;
 }
 .contact-list li a{
     align-items: center;    
 }
 .contact-list li a, .social-list li a {
-    color: var(--color);
+    /* color: var(--color); */
+    color: red;
     padding: 0 7px;
     text-decoration: none;
     text-transform: lowercase;
@@ -53,6 +55,7 @@
 .navbar {
     position: sticky;
     top: 0px;
+    /* height: 3.5rem; */
     z-index: 1;
     display: flex;
     align-items: center;
@@ -267,7 +270,7 @@ footer hr {
 .contact-footer hr {
     width: 70%;
     margin-left: 0;
-    background-color: transparent;
+    background-color: transparent; 
 }
 .nav-footer {
     width: 40%;
