@@ -1,6 +1,6 @@
 /* body { 
     overflow-y: hidden;
-} */
+} */ 
 a {
     text-transform: capitalize;
     color: #fff;
@@ -18,12 +18,13 @@ a {
 /* =========================================== */
 
 .sec {
-    width: 90%;
+    /* width: 90%; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: auto;
+    /* margin: auto; */
+    padding: 0rem 4rem;
 }
 .container {
     width: 50%;
@@ -53,14 +54,14 @@ a {
 .slide h2 {
     text-transform: capitalize;
     font-size: 2rem;
-    color: #16163F;
+    color: black;
     margin: 0.5rem auto;
-    text-align: left !important;
+    text-align: left;
 }
 .slide p {
     margin: 0.3rem;
     font-size: 1.1rem;
-    color: #16163F;
+    color: black;
 }
 .current {
     display: unset;
@@ -73,20 +74,20 @@ a {
 
 .heading > h2, .content h2, .text h2 {
     font-size: 2rem;
-    color: #16163F;
-    text-align: left !important;
+    color: black;
+    text-align: left;
     /* text-transform: uppercase; */
     margin: 0 1rem 1rem 1rem; 
 }
 .sec2 .heading > h2 {
-    text-align: center !important;
+    text-align: center;
 }
 .heading > hr, .content hr, .text hr {
     width: 15%;
     margin: 0 auto;
     height: 0.1rem;
-    background-color: #16163F;
-    border: 1px solid #16163F;
+    background-color: black;
+    border: 1px solid black;
     border-radius: 3px;
     margin-bottom: 1rem;
 }
@@ -169,7 +170,8 @@ a {
 
 .dark {
     position: relative;
-    background-color: rgb(148, 148, 148, 0.2);
+    /* background-color: rgb(148, 148, 148, 0.2); */
+    background-color: rgb(37, 150, 190, 0.15);
 }
 .light {
     display: flex;
@@ -199,6 +201,9 @@ a {
     margin: 0;
     text-align: left;
 }
+.text p {
+    text-align: justify;
+}
 .sec-img {
     width: 50%;
 }
@@ -209,8 +214,10 @@ a {
     margin-top: 1rem;
     border-radius: 0.8rem;
     padding: 0.4rem 0.55rem;
-    background-color: #16163F;
-    box-shadow: 2px 2px 5px 2px rgb(133, 133, 133);
+    background-color: var(--color);
+}
+.sec-btn:hover {
+    box-shadow: 2px 2px 5px 2px rgb(133, 133, 133, 0.4);
 }
 
 /* ====================================================== */
@@ -233,7 +240,7 @@ a {
     border-radius: 1.5rem;
     box-shadow: 3px 3px 10px 2px #797979;
     padding: 1rem 2rem;
-    color:#16163F;
+    color:black;
 }
 .sec10 ul {
     list-style: none;
@@ -243,18 +250,18 @@ a {
     margin: 1rem 0;
 }
 .sec10-list li a {
-    color: var(--color);
+    color: black;
 }
 .sec10-list li a:hover {
-    text-shadow: 2px 2px 5px #16163F66;
+    text-shadow: 2px 2px 5px black66;
     font-size: 1.05rem;
 }
 .hr {
     width: 15%;
     margin: 0;
     height: 0.1rem;
-    background-color: #16163F;
-    border: 1px solid #16163F;
+    background-color: black;
+    border: 1px solid black;
     border-radius: 3px;
     margin-bottom: 1.5rem;
 }
@@ -320,6 +327,13 @@ a {
 @media (max-width:767px) {
     .main-body {
         gap: 0.5rem;
+        text-align: center;
+    }
+    .hr, hr, .heading > hr, .content hr, .text hr {
+        margin: auto;
+    }
+    .heading > h2, .content h2, .text h2, h2, .slide h2{
+        text-align: center;
     }
     /* .sec {
         position: relative;

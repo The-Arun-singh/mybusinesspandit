@@ -1,13 +1,15 @@
 :root {
     --color: rgb(37, 150, 190);
     --enquire-now: rgba(245,168,74,255);
-}
+} 
 
 * {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    text-align: justify !important;
+}
+
+body {
     font-family: 'Book Antiqua', sans-serif;
 }
 /* "Bookman Old Style",,'Century Gothic' */
@@ -16,10 +18,12 @@
 
 /* ----------header contact and social-------- */
 .contact-and-social {
-    margin: 0.1rem auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 0 8%;
+    padding: 0.1rem 12%;
+    background-color: rgb(32, 32, 32);
+    /* margin: 0 10%; */
 }
 
 .contact-list, .social-list {
@@ -31,22 +35,24 @@
     display: flex;
 }
 .contact-list {
-    margin-left: 4rem;
     font-weight: bold;
 }
-.contact-list li a, .social-list li a {
-    color: var(--color);
+.contact-list li a, .social-list li a { 
+    color: #fff;  
     padding: 0 7px;
     text-decoration: none;
     text-transform: lowercase;
 }
 .contact-list li a{
     align-items: center;  
-    color: red;  
+    color: #fff;  
 }
 .icon {
     font-size: large;
     margin: 0 2px 0 0;
+}
+.contact-list li a:hover, .social-list li a:hover {
+    color: red;
 }
 /* ----------header contact and social-------- */
 
@@ -70,16 +76,12 @@
 
 .logo_img {
     width: 100%;
-    /* border: 2px solid black; */
-    /* border-radius: 50%; */
-    margin: 0;
-    padding: 0.2rem;
 }
 .logo {
-    width: 15%;
+    width: 8rem;
     text-align: center;
     background-color: #fff;
-    padding: 0 0.5rem;
+    padding: 0.4rem 1rem;
 }
 .toggler, .hamburger {
     /* visibility: hidden; */
@@ -110,12 +112,13 @@
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
-    text-align: left !important;
+    text-align: left;
 }
 .list >li> label:hover, .list > li > a:hover, .sublist> li> a:hover {
     background-color: #fff;
-    color: var(--color);
+    color: black;
     border-radius: 4px;
+    font-weight: bold;
 }
 .list> li> input {
     position: absolute;
@@ -169,13 +172,14 @@
     text-align: center;
     border: 2px solid var(--color);
     border-radius: 10px;
-    padding: 3px 1px;
+    padding: 3px;
     background-color: #fff;
 }
 .navbar>.btn> a {
     text-transform: capitalize;
     text-decoration: none;
-    color: var(--color);
+    font-weight: bold;
+    color: black;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -305,11 +309,11 @@ footer hr {
 }
 .btn-lrg {
     width: 95%;
-    color: var(--color);
+    color: black;
 }
 .btn-lrg:hover, .cta input:hover {
     transform: scale(1.01);
-    box-shadow: 0 0 3px 3px rgb(55, 72, 255, 0.3);
+    box-shadow: 3px 2px 10px 3px #a8d9f5ad;
     text-shadow: 0 0 0.5px var(--color);
 }
 
@@ -323,11 +327,12 @@ footer hr {
 }
 .copyright a {
     text-decoration: none;
-    color: rgb(55, 72, 255);
+    color: black;
+    font-weight: bold;
 }
 .copyright p {
-    text-align: center !important;
-    text-transform: none !important;
+    text-align: center;
+    text-transform: none;
 }
 .copyright a:hover {
     text-shadow: 0 0 1px var(--color);
@@ -433,7 +438,7 @@ footer hr {
         align-items: center;
         justify-content: center;
         border-radius: 3px;
-        margin: 1rem;
+        margin: 0.5rem 1rem;
     }
     .hamburger> div {
         position: relative;
@@ -485,6 +490,16 @@ footer hr {
         border-radius: 4px;
         background-color: var(--color);
     }
+    .list::before {
+        position: inherit;
+        content: "";
+        width:1.5rem;
+        height: 1.5rem;
+        top:-0.5rem;
+        right: 1.2rem;
+        transform: rotate(45deg);
+        background-color: var(--color);
+    }
     .list> li {
         padding: 0.5rem 0;
         border-bottom: 1px solid #fff;
@@ -511,7 +526,10 @@ footer hr {
         margin-left: 0.5rem;
         font-size: 1.05rem;
     }
-
+    
+    .contact-and-social {
+        padding: 0.1rem 5%;
+    }
 
 
 }

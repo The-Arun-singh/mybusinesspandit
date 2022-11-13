@@ -97,7 +97,7 @@
     padding: 0 2rem;
     margin: 0 0 4rem 0;
 }
-
+ 
 /* ====================================== CONTENT START =============================== */
 
 .overview {
@@ -111,8 +111,8 @@
 }
 .overview h2, .heading> h2, .docs-required h2, .reg-process h2, .faqs h2, .eligibility h2 {
     font-size: 2rem;
-    color: #16163F;
-    text-align: center !important;
+    color: black;
+    text-align: center;
     text-transform: uppercase;
     margin: 0 1rem 1rem 1rem; 
 }
@@ -129,19 +129,19 @@
     border-radius: 1rem;
 }
 .heading {
-    text-align: center !important;
+    text-align: center;
 } 
 .heading> p {
-    color: #7A7A7A;
+    color: black;
     padding-bottom: 1.5rem;
-    text-align: center !important;
+    text-align: center;
 }
 .advantages hr, .need-for-MSC hr, .docs-required hr, .reg-process hr, .faqs hr, .activities hr, .eligibility hr{
     width: 15%;
     margin: 0 auto;
     height: 0.1rem;
-    background-color: #16163F;
-    border: 1px solid #16163F;
+    background-color: black;
+    border: 1px solid transparent;
     border-radius: 3px;
     margin-bottom: 2.5rem;
 }
@@ -166,7 +166,7 @@
     font-weight: bolder;
     font-size: 1.5rem;
     text-transform: capitalize;
-    text-align: center !important;
+    text-align: center;
 }
 .cell li {
     text-align: justify;
@@ -183,7 +183,7 @@
 }
 
 .c10 {
-    color: #fff !important;
+    color: #fff;
 }
 
 
@@ -236,8 +236,8 @@
     width: 15%;
     margin: 0 auto;
     height: 0.02rem;
-    background-color: #16163F;
-    border: 1px solid #16163F;
+    background-color: black;
+    border: 1px solid transparent;
     border-radius: 3px;
     margin-bottom: 1rem;
 }
@@ -262,10 +262,10 @@
 }
 .eligibility p, .eligibility li {
     padding-bottom: 0.8rem;
-    color: #7A7A7A;
+    color: black;
 }
 .eligibility p {
-    color: #4b4b4b;
+    color: black;
     font-size: 1.1rem;
     padding-bottom: 1rem;
 }
@@ -276,7 +276,7 @@
     margin: 1rem 0 3rem 1rem;
 }
 /* .faqs p {
-    color: #7A7A7A;
+    color: black;
 } */
 details {
     margin: 1.5rem 0;
@@ -326,7 +326,7 @@ details > p {
     border-bottom: 2px solid black;
 }
 .enquire-now p {
-    /* color: #7A7A7A; */
+    /* color: black; */
     padding-bottom: 0.6rem;
     text-align: justify;
     line-height: 1.15rem;
@@ -347,16 +347,16 @@ details > p {
 }
 .enquire-now button {
     /* background-color: var(--color); */
-    background-color: #16163F;
+    background-color: black;
     color: #fff;
     font-weight: bold;
     border: 1px solid transparent;
     border-radius: 50px;
     margin-top: 0.8rem;
-    text-align: center !important;
+    text-align: center;
 }
 .enquire-now button:hover {
-    box-shadow: 3px 2px 10px 1px #16163F;
+    box-shadow: 3px 2px 10px 1px black;
 }
 /* ====================================== ASIDE END ================================= */
 
@@ -405,7 +405,7 @@ details > p {
 
     .docs-required ul li, .docs-required> ol li, .docs-required> ul li {
         font-size: 1rem;
-        color: #7A7A7A;
+        color: black;
     }
 
     .faqs {

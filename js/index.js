@@ -117,7 +117,7 @@ body.insertAdjacentHTML("beforeend", `
             <div class="left-footer">
                 <img src="/media/logo2.webp" alt="logo" class="logo-footer">
                 <p class="text-footer">
-                    Mylegalbusiness.com is an online technology based registration platform to simplify the matters related to Company Registration, Trademark Registration, GST Registration, GST Return, Import Export Code (IEC) ISO Certificate, FSSAI Registration etc. It is a one stop solution for all kind of Registration or Compliance Requirement.
+                    MylegalAdda is an online technology based registration platform to simplify the matters related to Company Registration, Trademark Registration, GST Registration, GST Return, Import Export Code (IEC) ISO Certificate, FSSAI Registration etc. It is a one stop solution for all kind of Registration or Compliance Requirement.
                 </p>
                 <ul class="social-footer-list">
                     <li><a href="${facebook}"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>

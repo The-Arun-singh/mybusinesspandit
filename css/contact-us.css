@@ -1,5 +1,5 @@
 main {
-    padding: 10rem 0;
+    padding: 12rem 0;
     background-image: url(../media/contact-us\(nilay\)1.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -7,11 +7,11 @@ main {
 }
 
 main h1 {
-    position: relative;
-    text-align: center;
-    top: 20%;
     font-size: 42px;
-    margin-left: 3rem;
+    margin: 0 0 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 } 
 
 
@@ -23,19 +23,19 @@ article {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6rem;
+    gap: 5rem;
 }
 
 article h2 {
     font-size: 2rem;
     padding-bottom: 0.6rem;
-    color: var(--color);
+    color: black;
 }
 article hr {
     width: 40%;
     margin-bottom: 0.6rem;
     height: 4px;
-    background-color: var(--color);
+    background-color: black;
     
 }
 .sec {
@@ -54,7 +54,7 @@ article hr {
     display: flex;
     text-decoration: none;
     border-bottom: 2px solid #2386b1;
-    color: var(--color);
+    color: black;
     font-size: 24px; 
     font-weight: bold;
     
@@ -67,9 +67,10 @@ article hr {
 
 .aside {
     box-sizing: border-box;
-    border: 4px solid transparent;
+    border: 4px solid var(--enquire-now);
     border-radius: 20px;
-    box-shadow: 2px 2px 5px 2px var(--color);
+    /* background-color: var(--enquire-now); */
+    box-shadow: 2px 2px 5px 2px var(--enquire-now);
     padding: 2rem 0;
     margin: 2rem;
 
@@ -81,10 +82,10 @@ article hr {
 }
 .wrapper input, .wrapper button {
     font-size: 16px;
-    padding: 5px;
+    padding:  0 1rem;
     margin: 8px;
     border-color: transparent;
-    border-bottom: 2px solid var(--color);
+    border-bottom: 2px solid var(--enquire-now);
     opacity: 0.7;
     border-radius: 5px;
     font-size: 14px;
@@ -102,12 +103,22 @@ article hr {
 #message {
     height: 24%;
     margin: 1rem;
-}
+} 
 .wrapper button {
-    background-color: var(--color);
+    background-color: var(--enquire-now);
     color: #fff;
     opacity: 1;
     font-size: 16px;
+}
+.wrapper  hr {
+    background-color: var(--enquire-now);
+    border-color: transparent;
+}
+.wrapper button:hover {
+    box-shadow: 2px 2px 5px 3px rgba(245,168,74, 0.3);
+}
+.wrapper input:focus, .wrapper textarea:focus {
+    outline-color: var(--enquire-now);
 }
 /* ======================MEDIA-QUERIES===============/ */
 @media screen and (max-width: 767px) {
@@ -121,5 +132,13 @@ article hr {
         padding: 0;
         gap: 1rem;
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 1024px) {
+    article {
+        padding: 0 2rem;
+    }
+    .sec {
+        padding-left: 2rem;
     }
 }
