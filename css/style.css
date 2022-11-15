@@ -309,10 +309,10 @@ details > p {
     /* margin: 7rem 5rem 4rem 3rem; */
     margin: 0rem auto 3rem;
     padding: 0 1rem;
-    border: 1px solid var(--color);
+    border: 2px solid rgb(245, 153, 40);
     border-radius: 1rem;
-    box-shadow: 3px 4px 10px 1px var(--enquire-now);
-    background-color: var(--enquire-now);
+    box-shadow: 3px 4px 10px 1px rgba(245,168,74,0.5);
+    background-color:rgba(245,168,74);
 }
 
 .enquire-now {
@@ -336,7 +336,7 @@ details > p {
     font-size: 0.9rem;
     padding: 0.2rem;
     border-radius: 2px;
-    border: 1px solid black;
+    border: 2px solid rgb(245, 153, 40);
 }
 .enquire-now input:focus, textarea:focus {
     outline: none;
@@ -347,7 +347,7 @@ details > p {
 }
 .enquire-now button {
     /* background-color: var(--color); */
-    background-color: black;
+    background-color: rgb(247, 152, 36);
     color: #fff;
     font-weight: bold;
     border: 1px solid transparent;
@@ -356,7 +356,7 @@ details > p {
     text-align: center;
 }
 .enquire-now button:hover {
-    box-shadow: 3px 2px 10px 1px black;
+    box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.89);
 }
 /* ====================================== ASIDE END ================================= */
 

@@ -220,13 +220,12 @@ footer hr {
     width: 78%;
     height: 20%;
     border-radius: 5px;
-    margin-left: 1rem; 
     padding: 1rem;
     background-color: #fff;
 }
 .text-footer {
     color: #fff;
-    text-align: left;
+    text-align: justify;
     margin: 1rem;
     text-transform: initial;
 }
@@ -310,11 +309,13 @@ footer hr {
 .btn-lrg {
     width: 95%;
     color: black;
+    border: 2px solid black;
 }
 .btn-lrg:hover, .cta input:hover {
     transform: scale(1.01);
     box-shadow: 3px 2px 10px 3px #a8d9f5ad;
-    text-shadow: 0 0 0.5px var(--color);
+    /* text-shadow: 0 0 0.5px var(--color); */
+    border: 2px solid black;
 }
 
 
