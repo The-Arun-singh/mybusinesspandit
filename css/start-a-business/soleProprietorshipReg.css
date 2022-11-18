@@ -4,7 +4,8 @@
 
 
 .banner {
-    background: url('../../media/private-limited-company-2.jpg') no-repeat center / cover fixed;
+    background: url('../../media/soleproprietorship.webp') no-repeat right / contain ;
+    background-size: 50% 100%;
 }
 
 /* ========================================= */
@@ -14,7 +15,7 @@
 
 @media screen and (max-width: 767px) {
     .banner {
-        background: url('../../media/private-limited-company-2.jpg') no-repeat center / cover;
+        background: url('../../media/soleproprietorship.webp') no-repeat right / contain;
     }
 }
 /* ========================================= */

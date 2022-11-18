@@ -5,7 +5,7 @@
 /* ===================main======================= */
 
 .banner {
-    background: url('../../media/Producer-Company.jpg') no-repeat center / cover fixed;
+    background: url('../../media/Producer-Company.jpg') no-repeat top / cover fixed;
 }
 
 /* ===================main======================= */
@@ -53,7 +53,7 @@ figure figcaption {
 
 @media screen and (max-width: 767px) {
     .banner {
-        background: url('../../media/Producer-Company.jpg') no-repeat center / cover;
+        background: url('../../media/Producer-Company.jpg') no-repeat top  / cover;
     }
     figure img {
         width: 80%;

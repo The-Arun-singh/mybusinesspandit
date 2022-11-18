@@ -6,7 +6,8 @@
 
 .banner {
     /* background: url('../../media/private-limited-company-2.jpg') no-repeat center / cover fixed; */
-    background: url('../../media/microfinance.jpg') no-repeat top / cover fixed;
+    background: url('../../media/microfin.jpg') no-repeat right / cover fixed;
+    background-size: ;
 }
 
 /* ===================main======================= */
@@ -52,6 +53,6 @@
 
 @media screen and (max-width: 767px) {
     .banner {
-        background: url('../../media/microfinance.jpg') no-repeat top / cover;
+        background: url('../../media/microfin.jpg') no-repeat right / cover;
     }
 } 

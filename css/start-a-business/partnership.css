@@ -4,7 +4,7 @@
 /* ===================main======================= */
 
 .banner {
-    background: url('../../media/220-SM938837.jpg') no-repeat center / cover fixed;
+    background: url('../../media/tinywow_partnership\(1\).webp') no-repeat right  / contain ;
 }
 
 /* ===================main======================= */
@@ -34,6 +34,6 @@
 
 @media screen and (max-width: 767px) {
     .banner {
-        background: url('../../media/220-SM938837.jpg') no-repeat center / cover;
+        background: url('../../media/tinywow_partnership\(1\).webp') no-repeat top / cover;
     }
 }
