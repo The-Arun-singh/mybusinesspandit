@@ -1,7 +1,7 @@
 // varibles
 let mobNum1 = '+91-8750144044';
 let mobNum2 = '+91-8700933923';
-let email = 'support@mylegaladda.com';
+let email = 'support@MYBUSINESSPANDIT.com';
 let facebook = '';
 let instagram = '';
 let twitter = '';
@@ -34,7 +34,7 @@ body.insertAdjacentHTML("afterbegin", `
 
     <nav class="navbar">
         <div class="logo">
-            <a href="/index.html"><img class="logo_img" src="/media/logo2.webp" alt="logo"></a>
+            <a href="/index.html"><img class="logo_img" src="/media/logo.jpeg" alt="logo"></a>
         </div>
 
         <input type="checkbox" class="toggler">
@@ -115,9 +115,9 @@ body.insertAdjacentHTML("beforeend", `
     <footer>
         <div class="footer">
             <div class="left-footer">
-                <img src="/media/logo2.webp" alt="logo" class="logo-footer">
+                <img src="/media/logo.jpeg" alt="logo" class="logo-footer">
                 <p class="text-footer">
-                    MylegalAdda is an online technology based registration platform to simplify the matters related to Company Registration, Trademark Registration, GST Registration, GST Return, Import Export Code (IEC) ISO Certificate, FSSAI Registration etc. It is a one stop solution for all kind of Registration or Compliance Requirement.
+                    MYBUSINESSPANDIT is an online technology based registration platform to simplify the matters related to Company Registration, Trademark Registration, GST Registration, GST Return, Import Export Code (IEC) ISO Certificate, FSSAI Registration etc. It is a one stop solution for all kind of Registration or Compliance Requirement.
                 </p>
                 <ul class="social-footer-list">
                     <li><a href="${facebook}"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>
@@ -152,7 +152,7 @@ body.insertAdjacentHTML("beforeend", `
         </div>
         <hr>
         <div class="copyright">
-            <p> All Rights Reserved. Copyright@2020-21. Powered by <a href="/index.html">MY LEGAL ADDA</a></p>
+            <p> All Rights Reserved. Copyright@2020-21. Powered by <a href="/index.html">MY BUSINESS PANDIT</a></p>
         </div>
     </footer>
-`);
+`); 

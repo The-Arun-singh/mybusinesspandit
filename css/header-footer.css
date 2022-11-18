@@ -75,13 +75,15 @@ body {
 }
 
 .logo_img {
+    height: 100%;
     width: 100%;
 }
 .logo {
     width: 8rem;
+    height: 3.5rem;
     text-align: center;
     background-color: #fff;
-    padding: 0.4rem 1rem;
+    padding: 0.1rem 1rem;
 }
 .toggler, .hamburger {
     /* visibility: hidden; */
@@ -217,10 +219,10 @@ footer hr {
     display: none;
 }
 .logo-footer {
-    width: 78%;
-    height: 20%;
+    width: 80%;
+    height: 30%;
     border-radius: 5px;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     background-color: #fff;
 }
 .text-footer {
