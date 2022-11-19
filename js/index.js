@@ -8,7 +8,13 @@ let twitter = '';
 let youtube = '';
 // parent element
 
+let title = document.querySelector('title');
 let body = document.querySelector('body');
+
+// title 
+
+title.innerText = "MY BUSINESS PANDIT";
+
 
 
 // write the innerhtml
