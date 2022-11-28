@@ -1,5 +1,5 @@
 :root {
-    --color: rgb(37, 150, 190);
+    --color: rgba(0,43,70);
     --enquire-now: rgba(245,168,74,255);
 } 
 
@@ -77,13 +77,13 @@ body {
 .logo_img {
     height: 100%;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 0.1rem;
 }
 .logo {
-    width: 7rem;
+    width: 14rem;
     height: 3.5rem;
     text-align: center;
-    padding: 0.2rem 1rem;
+    padding: 0rem 1rem;
 
 }
 .toggler, .hamburger {
@@ -199,6 +199,7 @@ footer {
     padding: 1.5rem 0;
     background-color: var(--color);
     text-transform: capitalize;
+    margin-top: 5rem;
 }
 footer hr {
     width: 98%;
@@ -211,7 +212,7 @@ footer hr {
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    padding: 0 0 5% 0;
+    /* padding: 0 0  0; */
 }
 .left-footer {
     width: 25%;
@@ -220,9 +221,9 @@ footer hr {
     display: none;
 }
 .logo-footer {
-    width: 80%;
+    width: 90%;
     height: 30%;
-    border-radius: 50%;
+    border-radius: 0.1rem;
 }
 .text-footer {
     color: #fff;
@@ -265,10 +266,11 @@ footer hr {
 .contact-footer p {
     text-align: left;
     padding: 0.2rem 0 0.2rem 8px;
+    text-transform: none;
 }
-.contact-footer p>a {
+.mid-footer  .contact-footer  p  a {
     text-align: center;
-    text-decoration: none;
+    /* text-decoration: none !important; */
     color: #fff;
 }
 .contact-footer hr {
@@ -315,7 +317,6 @@ footer hr {
 .btn-lrg:hover, .cta input:hover {
     transform: scale(1.01);
     box-shadow: 3px 2px 10px 3px #a8d9f5ad;
-    /* text-shadow: 0 0 0.5px var(--color); */
     border: 2px solid black;
 }
 

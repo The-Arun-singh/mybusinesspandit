@@ -2,7 +2,6 @@
     overflow-y: hidden;
 } */ 
 a {
-    text-transform: capitalize;
     color: #fff;
     text-decoration: none;
 }
@@ -171,7 +170,7 @@ a {
 .dark {
     position: relative;
     /* background-color: rgb(148, 148, 148, 0.2); */
-    background-color: rgb(37, 150, 190, 0.15);
+    background-color: rgba(0,43,70, 0.15);
 }
 .light {
     display: flex;

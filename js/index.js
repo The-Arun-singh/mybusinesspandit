@@ -6,6 +6,7 @@ let facebook = '';
 let instagram = '';
 let twitter = '';
 let youtube = '';
+let logoPath = '/media/logo(27nov).jpeg'
 // parent element
 
 let title = document.querySelector('title');
@@ -40,7 +41,7 @@ body.insertAdjacentHTML("afterbegin", `
 
     <nav class="navbar">
         <div class="logo">
-            <a href="/index.html"><img class="logo_img" src="/media/logo.jpeg" alt="logo"></a>
+            <a href="/index.html"><img class="logo_img" src="${logoPath}" alt="logo"></a>
         </div>
 
         <input type="checkbox" class="toggler">
@@ -121,7 +122,7 @@ body.insertAdjacentHTML("beforeend", `
     <footer>
         <div class="footer">
             <div class="left-footer">
-                <img src="/media/logo.jpeg" alt="logo" class="logo-footer">
+                <img src="${logoPath}" alt="logo" class="logo-footer">
                 <p class="text-footer">
                     MYBUSINESSPANDIT is an online technology based registration platform to simplify the matters related to Company Registration, Trademark Registration, GST Registration, GST Return, Import Export Code (IEC) ISO Certificate, FSSAI Registration etc. It is a one stop solution for all kind of Registration or Compliance Requirement.
                 </p>
