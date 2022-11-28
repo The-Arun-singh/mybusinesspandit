@@ -22,98 +22,108 @@ title.innerText = "MY BUSINESS PANDIT";
 
 body.insertAdjacentHTML("afterbegin", `
     <section class="header">
-        <div class="contact-and-social">
-            <ul class="contact-list">
-                <span class="mobile_no">
-                    <li><a href="tel:${mobNum1}"><ion-icon class='icon' name="call"></ion-icon>${mobNum1}</a></li>
-                    <li><a href="tel:${mobNum2}"><ion-icon class='icon' name="call"></ion-icon>${mobNum2}</a></li>
-                </span>
-                <li><a href="mailto:${email}"><ion-icon class='icon' name="mail"></ion-icon>${email}</a></li>
-            </ul>
-            <ul class="social-list">
-                <li><a href="${facebook}"><ion-icon class='icon' name="logo-facebook"></ion-icon></a></li>
-                <li><a href="${instagram}"><ion-icon class='icon' name="logo-instagram"></ion-icon></a></li>
-                <li><a href="${twitter}"><ion-icon class='icon' name="logo-twitter"></ion-icon></a></li>
-                <li><a href="${youtube}"><ion-icon class='icon' name="logo-youtube"></ion-icon></a></li>
-            </ul>
-        </div>
-    </section>
-
-    <nav class="navbar">
+        
         <div class="logo">
-            <a href="/index.html"><img class="logo_img" src="${logoPath}" alt="logo"></a>
+            <a href="/index.html">
+                <img class="logo_img" src="${logoPath}" alt="logo">
+            </a>
         </div>
 
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div></div>
-        </div>
+        <header-nav>
 
-        <ul class="list">
-            <li>
-                <input type="checkbox" name="sublist" id="btn-1">
-                <label for="btn-1" class="first">
-                    Start a Business  
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </label>
-                <ul class="sublist">
-                    <li><a href="/html/start-a-buisness/sole-proprietorship-registration.html">sole proprietorship registration</a></li>
-                    <li><a href="/html/start-a-buisness/partnership-registration.html">partnership registration</a></li>
-                    <li><a href="/html/start-a-buisness/limited-liability-partnership-registration.html">limited liability partnership registration</a></li>
-                    <li><a href="/html/start-a-buisness/one-person-company.html">one person company</a></li>
-                    <li><a href="/html/start-a-buisness/private-limited-company.html">private limited company</a></li>
-                    <li><a href="/html/start-a-buisness/nidhi-company.html">nidhi company</a></li>
-                    <li><a href="/html/start-a-buisness/producer-company.html">producer company</a></li>
-                    <li><a href="/html/start-a-buisness/section-8-micro-finance-company-registration.html">section 8 micro finance company registration</a></li>
-                    <li><a href="/html/start-a-buisness/section-8-company-registration.html">section 8 company registration</a></li>
+            <div class="contact-and-social">
+                <ul class="contact-list">
+                    <span class="mobile_no">
+                        <li><a href="tel:${mobNum1}"><ion-icon class='icon' name="call"></ion-icon>${mobNum1}</a></li>
+                        <li><a href="tel:${mobNum2}"><ion-icon class='icon' name="call"></ion-icon>${mobNum2}</a></li>
+                    </span>
+                    <li><a href="mailto:${email}"><ion-icon class='icon' name="mail"></ion-icon>${email}</a></li>
                 </ul>
-            </li>
-            <li>
-                <input type="checkbox" name="sublist" id="btn-2">
-                <label for="btn-2" class="second">
-                    license & registration  <ion-icon name="chevron-down-outline"></ion-icon>
-                </label>
-                <ul class="sublist">
-                    <li><a href="/html/license-and-registration/gst-registration.html">GST registration</a></li>
-                    <li><a href="/html/license-and-registration/trademark-registration.html">trademark registration</a></li>
-                    <li><a href="/html/license-and-registration/msme-registration.html">MSME registration</a></li>
-                    <li><a href="/html/license-and-registration/shops-and-establishment-registration.html">shops and establishment registration</a></li>
-                    <li><a href="/html/license-and-registration/iso-registration.html">ISO registration</a></li>
-                    <li><a href="/html/license-and-registration/pf-esi-registration.html">PF/ESI registration</a></li>
-                    <li><a href="/html/license-and-registration/import-export-code.html">import export code</a></li>
-                    <li><a href="/html/license-and-registration/fssai-registration.html">FSSAI registration</a></li>
-                    <li><a href="/html/license-and-registration/80g-and-12a-registration.html">80G and 12A registration</a></li>
+                <ul class="social-list">
+                    <li><a href="${facebook}"><ion-icon class='icon' name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="${instagram}"><ion-icon class='icon' name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="${twitter}"><ion-icon class='icon' name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="${youtube}"><ion-icon class='icon' name="logo-youtube"></ion-icon></a></li>
                 </ul>
-            </li>
-            <li>
-                <input type="checkbox" name="sublist" id="btn-3">
-                <label for="btn-3" class="third">
-                    auditing & taxation  <ion-icon name="chevron-down-outline"></ion-icon>
-                </label>
-                <ul class="sublist">
-                    <li><a href="/html/auditing-and-taxation/income-tax.html">income tax</a></li>
-                    <li><a href="/html/auditing-and-taxation/gst.html">GST</a></li>
-                    <li><a href="/html/auditing-and-taxation/statutory-audit.html">statutory audit</a></li>
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" name="sublist" id="btn-4">
-                <label for="btn-4" class="fourth">
-                        legal & compliances <ion-icon name="chevron-down-outline">
-                        </ion-icon>
-                </label>
-                <ul class="sublist">
-                    <li><a href="/html/legal-and-compliances/annual-filling-and-all-other-compliances.html">annual filling & all other compliances</a></li>
-                </ul>
-            </li>
-            <li><a href="/html/contact-us.html">contact us</a></li>
-            <li id="blog"><a href="/html/blog.html">blog</a></li>
-        </ul>
+            </div>
+        
 
-        <div class="btn">
-            <a href="/html/book-now.html">book now <ion-icon class='icon' name="bookmark-outline"></ion-icon></a>
-        </div>
-    </nav>
+            <nav class="navbar">
+
+                <input type="checkbox" class="toggler">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+
+                <ul class="list">
+                    <li>
+                        <input type="checkbox" name="sublist" id="btn-1">
+                        <label for="btn-1" class="first">
+                            Start a Business  
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </label>
+                        <ul class="sublist">
+                            <li><a href="/html/start-a-buisness/sole-proprietorship-registration.html">sole proprietorship registration</a></li>
+                            <li><a href="/html/start-a-buisness/partnership-registration.html">partnership registration</a></li>
+                            <li><a href="/html/start-a-buisness/limited-liability-partnership-registration.html">limited liability partnership registration</a></li>
+                            <li><a href="/html/start-a-buisness/one-person-company.html">one person company</a></li>
+                            <li><a href="/html/start-a-buisness/private-limited-company.html">private limited company</a></li>
+                            <li><a href="/html/start-a-buisness/nidhi-company.html">nidhi company</a></li>
+                            <li><a href="/html/start-a-buisness/producer-company.html">producer company</a></li>
+                            <li><a href="/html/start-a-buisness/section-8-micro-finance-company-registration.html">section 8 micro finance company registration</a></li>
+                            <li><a href="/html/start-a-buisness/section-8-company-registration.html">section 8 company registration</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="sublist" id="btn-2">
+                        <label for="btn-2" class="second">
+                            license & registration  <ion-icon name="chevron-down-outline"></ion-icon>
+                        </label>
+                        <ul class="sublist">
+                            <li><a href="/html/license-and-registration/gst-registration.html">GST registration</a></li>
+                            <li><a href="/html/license-and-registration/trademark-registration.html">trademark registration</a></li>
+                            <li><a href="/html/license-and-registration/msme-registration.html">MSME registration</a></li>
+                            <li><a href="/html/license-and-registration/shops-and-establishment-registration.html">shops and establishment registration</a></li>
+                            <li><a href="/html/license-and-registration/iso-registration.html">ISO registration</a></li>
+                            <li><a href="/html/license-and-registration/pf-esi-registration.html">PF/ESI registration</a></li>
+                            <li><a href="/html/license-and-registration/import-export-code.html">import export code</a></li>
+                            <li><a href="/html/license-and-registration/fssai-registration.html">FSSAI registration</a></li>
+                            <li><a href="/html/license-and-registration/80g-and-12a-registration.html">80G and 12A registration</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="sublist" id="btn-3">
+                        <label for="btn-3" class="third">
+                            auditing & taxation  <ion-icon name="chevron-down-outline"></ion-icon>
+                        </label>
+                        <ul class="sublist">
+                            <li><a href="/html/auditing-and-taxation/income-tax.html">income tax</a></li>
+                            <li><a href="/html/auditing-and-taxation/gst.html">GST</a></li>
+                            <li><a href="/html/auditing-and-taxation/statutory-audit.html">statutory audit</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="sublist" id="btn-4">
+                        <label for="btn-4" class="fourth">
+                                legal & compliances <ion-icon name="chevron-down-outline">
+                                </ion-icon>
+                        </label>
+                        <ul class="sublist">
+                            <li><a href="/html/legal-and-compliances/annual-filling-and-all-other-compliances.html">annual filling & all other compliances</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/html/contact-us.html">contact us</a></li>
+                    <li id="blog"><a href="/html/blog.html">blog</a></li>
+                </ul>
+
+                <div class="btn">
+                    <a href="/html/book-now.html">book now <ion-icon class='icon' name="bookmark-outline"></ion-icon></a>
+                </div>
+            </nav>
+
+        </header-nav>
+
+    </section>
 `);
 
 // add ftr html

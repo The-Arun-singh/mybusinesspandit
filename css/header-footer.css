@@ -16,12 +16,35 @@ body {
 
 /* ===========================<HEADER>========================== */
 
+.header {
+    position: sticky;
+    top: 0px;
+    /* height: 3.5rem; */
+    z-index: 1;
+    display: flex;
+}
+
+
+.logo_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.1rem;
+}
+.logo {
+    max-width: 20rem;
+    text-align: center;
+
+}
+
+/* .header-nav {
+    padding: rem;
+} */
 /* ----------header contact and social-------- */
 .contact-and-social {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 0.1rem 12%;
+    padding: 0.1rem 5%;
     background-color: rgb(32, 32, 32);
     /* margin: 0 10%; */
 }
@@ -59,33 +82,18 @@ body {
 
 /* ----------navbar----------- */
 .navbar {
-    position: sticky;
-    top: 0px;
-    /* height: 3.5rem; */
-    z-index: 1;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
-    padding: 0rem 1rem 0 0;
+    /* gap: 1.5rem; */
+    padding: 0rem 3.25rem;
     background-color: var(--color);
 }
 #blog {
     display: none;
 }
 
-.logo_img {
-    height: 100%;
-    width: 100%;
-    border-radius: 0.1rem;
-}
-.logo {
-    width: 14rem;
-    height: 3.5rem;
-    text-align: center;
-    padding: 0rem 1rem;
-
-}
 .toggler, .hamburger {
     /* visibility: hidden; */
     display: none;
@@ -212,7 +220,7 @@ footer hr {
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    /* padding: 0 0  0; */
+    padding: 0 0 2rem 0;
 }
 .left-footer {
     width: 25%;
