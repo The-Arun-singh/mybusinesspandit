@@ -1,7 +1,7 @@
 // varibles
 let mobNum1 = '+91-8750144044';
 let mobNum2 = '+91-8700933923';
-let email = 'support@MYBUSINESSPANDIT.com';
+let email = 'support@mybusinesspandit.com';
 let facebook = '';
 let instagram = '';
 let twitter = '';
