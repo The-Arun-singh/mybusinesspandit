@@ -21,7 +21,7 @@ p {
 .text {
     position: relative;
     /* background: hsl(220, 48%, 22% , 0.7); */
-    background-color: rgb(50, 150, 210, 0.2);
+    background-color: rgba(0,43,70, 0.2);
     /* background-size: 50% 50%; */
     padding: 8rem 6rem;
 }
@@ -155,7 +155,7 @@ p {
 }
 .cells div:nth-child(odd), .c10 {
     /* background-color: var(--color); */
-    background-color: rgb(37, 150, 190, 0.9);
+    background-color: rgba(0,43,70, 1);
     /* background-color: var(--enquire-now); */
     color: #fff;
     border: 1px solid transparent;

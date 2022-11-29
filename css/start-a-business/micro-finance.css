@@ -19,14 +19,14 @@
 .need-for-MSC h3 {
     font-size: 1.2rem;
     padding: 1rem 0;
-    color: #3f3f3f;
+    color: #000;
 }
 
 
 
 .need-for-MSC h2, .main-features h2 {
     font-size: 2rem;
-    color: #16163F;
+    color: #000;
     text-align: center;
     text-transform: uppercase;
     margin: 0 1rem 1rem 1rem; 
@@ -35,15 +35,15 @@
     width: 15%;
     margin: 0 auto;
     height: 0.1rem;
-    background-color: #16163F;
-    border: 1px solid #16163F;
+    background-color: var(--color);
+    border: 1px solid var(--color);
     border-radius: 3px;
     margin-bottom: 1rem;
 }
 .need-for-MSC ul li, .main-features ul li {
     padding-left: 1rem;
     padding-bottom: 0.5rem;
-    color: #575757;
+    color: #000;
 }
 
 /* ========================================= */
