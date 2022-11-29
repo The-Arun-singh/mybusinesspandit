@@ -16,37 +16,13 @@ body {
 
 /* ===========================<HEADER>========================== */
 
-.header {
-    position: sticky;
-    top: 0px;
-    /* height: 3.5rem; */
-    z-index: 1;
-    display: flex;
-}
-
-
-.logo_img {
-    height: 100%;
-    width: 100%;
-    border-radius: 0.1rem;
-}
-.logo {
-    max-width: 20rem;
-    text-align: center;
-
-}
-
-/* .header-nav {
-    padding: rem;
-} */
 /* ----------header contact and social-------- */
 .contact-and-social {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 0.1rem 5%;
+    padding: 0.1rem 5% 0.1rem 25%;
     background-color: rgb(32, 32, 32);
-    /* margin: 0 10%; */
 }
 
 .contact-list, .social-list {
@@ -78,21 +54,37 @@ body {
     color: red;
 }
 /* ----------header contact and social-------- */
-
+.header {
+    display: contents;
+}
 
 /* ----------navbar----------- */
 .navbar {
-    height: 4rem;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* gap: 1.5rem; */
-    padding: 0rem 3.25rem;
     background-color: var(--color);
 }
 #blog {
     display: none;
 }
+
+
+.logo_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.1rem;
+    padding: 0.1rem 0;
+}
+.logo {
+    width: 22rem;
+    height: 4rem;
+    text-align: center;
+}
+
 
 .toggler, .hamburger {
     /* visibility: hidden; */
@@ -179,7 +171,7 @@ body {
 
 .btn {
     width: 6.5rem;
-    margin: auto 0.1rem;
+    margin: auto 0.2rem;
     text-align: center;
     border: 2px solid var(--color);
     border-radius: 10px;
@@ -356,8 +348,7 @@ footer hr {
  /* =======================<HEADER>============================ */
 
     .contact-and-social {
-        margin: 0.2rem 0;
-        padding: 0;
+        padding: 0.2rem 0;
         text-align: center;
     }
     .contact-list {
@@ -375,6 +366,12 @@ footer hr {
         display: none;
     }
     
+    
+.logo {
+    width: 18rem;
+    height: 4rem;
+    text-align: center;
+}
  /* =======================</HEADER>============================ */
 
  /* =======================<FOOTER>============================ */
@@ -427,8 +424,8 @@ footer hr {
     /* Hamburger-menu */
     .toggler {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 0.5rem;
+        right: -0.5rem;
         width: 2rem;
         height: 2rem;
         z-index: 3;
@@ -438,8 +435,8 @@ footer hr {
     }
     .hamburger {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 0.5rem;
+        right: -0.5rem;
         z-index: 2;
         width: 1.4rem;
         height: 1rem;
@@ -540,6 +537,13 @@ footer hr {
     
     .contact-and-social {
         padding: 0.1rem 5%;
+    }
+
+    .footer {
+        margin-bottom: 4rem;
+    }
+    .contact-footer>p>a {
+        font-size: 0.8rem;
     }
 
 

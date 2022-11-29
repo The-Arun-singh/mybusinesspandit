@@ -8,10 +8,11 @@ main {
 
 main h1 {
     font-size: 42px;
-    margin: 0 0 0 5rem;
-    display: flex;
+    padding: 0 0 0 5%;
+    /* display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: start; */
+    width: 100%;
 } 
 
 
@@ -56,7 +57,7 @@ article hr {
     text-decoration: none;
     border-bottom: 2px solid #2386b1;
     color: black;
-    font-size: 24px; 
+    font-size: 1rem; 
     font-weight: bold;
     
 }
@@ -67,7 +68,7 @@ article hr {
 
 
 .aside {
-    min-width: 15rem;
+    width: 15rem;
     box-sizing: border-box;
     border: 4px solid var(--enquire-now);
     border-radius: 20px;
@@ -124,16 +125,7 @@ article hr {
 }
 /* ======================MEDIA-QUERIES===============/ */
 @media screen and (max-width: 767px) {
-    main {
-        padding: 8rem 0 8rem 0;
-        margin-top: 4rem;
-    }
-    main h1 {
-        position: relative;
-        font-size: 42px;
-        margin: 0 0 0 5rem;
-        bottom: 11rem;
-    }
+    
     
 
     article {
@@ -144,7 +136,7 @@ article hr {
     }
 
     .aside {
-        min-width: 15rem;
+        width: 15rem;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -152,5 +144,21 @@ article hr {
         padding: 0 1rem;
         margin: 1rem;
         flex-direction: column;
+    }main {
+        padding: 8rem 0 8rem 0;
+        margin-top: 4rem;
     }
+    main {
+        background-image: url(../media/contact-us\(nilay\)1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    main h1 {
+        position: relative;
+        font-size: 42px;
+        padding: 0 auto;
+        bottom: 11rem;
+    }
+
 }

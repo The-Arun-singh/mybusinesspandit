@@ -16,7 +16,7 @@ article.insertAdjacentHTML('afterbegin', `
                 ${mobNum2}</a></li>
             <li><a href="mailto:${email}"><span><ion-icon class='icon-1' name="mail"></ion-icon></span>
                 Send E-mail: <br>
-                support@</br>mybusinesspandit.com</a></li>
+                ${email}</a></li>
         </ul>
     </section>
 `);

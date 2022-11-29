@@ -17,12 +17,10 @@ a {
 /* =========================================== */
 
 .sec {
-    /* width: 90%; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    /* margin: auto; */
     padding: 0rem 4rem;
 }
 .container {
@@ -319,10 +317,10 @@ a {
 /* =========================================================== */
 /* @media queries */
 
-
+/* 
 @media (max-width:1024px) {
     
-}
+} */
 @media (max-width:767px) {
     .main-body {
         gap: 0.5rem;
@@ -333,20 +331,19 @@ a {
     }
     .heading > h2, .content h2, .text h2, h2, .slide h2{
         text-align: center;
+        font-size: 2rem;
     }
-    /* .sec {
-        position: relative;
-    }
-    .intro {
-        position: absolute;
-    } */
 
     .about-us {
         padding: 2.5rem 0.5rem;
     }
     .sec {
+        max-width: 100%;
         flex-direction: column-reverse;
         gap: 0;
+    }
+    .intro, .slide {
+        max-width: 100%;
     }
     .slide, .text {
         text-align: center;
