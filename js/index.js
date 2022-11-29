@@ -2,7 +2,7 @@
 let mobNum1 = '+91-8750144044';
 let mobNum2 = '+91-8700933923';
 let email = 'support@mybusinesspandit.com';
-let facebook = '';
+let facebook = 'https://www.facebook.com/people/Mybusinesspanditcom/100088418073317/';
 let instagram = '';
 let twitter = '';
 let youtube = '';
@@ -33,10 +33,10 @@ body.insertAdjacentHTML("afterbegin", `
                 <li><a href="mailto:${email}"><ion-icon class='icon' name="mail"></ion-icon>${email}</a></li>
             </ul>
             <ul class="social-list">
-                <li><a href="${facebook}"><ion-icon class='icon' name="logo-facebook"></ion-icon></a></li>
-                <li><a href="${instagram}"><ion-icon class='icon' name="logo-instagram"></ion-icon></a></li>
-                <li><a href="${twitter}"><ion-icon class='icon' name="logo-twitter"></ion-icon></a></li>
-                <li><a href="${youtube}"><ion-icon class='icon' name="logo-youtube"></ion-icon></a></li>
+                <li><a href="${facebook}" target="_blank"><ion-icon class='icon' name="logo-facebook"></ion-icon></a></li>
+                <li><a href="${instagram}" target="_blank"><ion-icon class='icon' name="logo-instagram"></ion-icon></a></li>
+                <li><a href="${twitter}" target="_blank"><ion-icon class='icon' name="logo-twitter"></ion-icon></a></li>
+                <li><a href="${youtube}" target="_blank"><ion-icon class='icon' name="logo-youtube"></ion-icon></a></li>
             </ul>
         </div>
     
@@ -135,10 +135,10 @@ body.insertAdjacentHTML("beforeend", `
                     MYBUSINESSPANDIT is an online technology based registration platform to simplify the matters related to Company Registration, Trademark Registration, GST Registration, GST Return, Import Export Code (IEC) ISO Certificate, FSSAI Registration etc. It is a one stop solution for all kind of Registration or Compliance Requirement.
                 </p>
                 <ul class="social-footer-list">
-                    <li><a href="${facebook}"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="${twitter}"><ion-icon class='footer-icon' name="logo-twitter"></ion-icon></a></li>
-                    <li><a href="${instagram}"><ion-icon class='footer-icon' name="logo-instagram"></ion-icon></a></li>
-                    <li><a href="${youtube}"><ion-icon class='footer-icon' name="logo-youtube"></ion-icon></a></li>
+                    <li><a href="${facebook}" target="_blank"><ion-icon class='footer-icon' name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="${twitter}" target="_blank"><ion-icon class='footer-icon' name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="${instagram}" target="_blank"><ion-icon class='footer-icon' name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="${youtube}" target="_blank"><ion-icon class='footer-icon' name="logo-youtube"></ion-icon></a></li>
                 </ul>
             </div> <br>
             <div class="mid-footer">
