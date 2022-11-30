@@ -78,6 +78,7 @@ body {
     width: 100%;
     border-radius: 0.1rem;
     padding: 0.1rem 0;
+    background-color: #fff;
 }
 .logo {
     width: 22rem;
@@ -221,8 +222,8 @@ footer hr {
     display: none;
 }
 .logo-footer {
-    width: 90%;
-    height: 30%;
+    width: 100%;
+    height: 35%;
     border-radius: 0.1rem;
 }
 .text-footer {

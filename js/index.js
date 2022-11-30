@@ -6,7 +6,7 @@ let facebook = 'https://www.facebook.com/people/Mybusinesspanditcom/100088418073
 let instagram = '';
 let twitter = '';
 let youtube = '';
-let logoPath = '/media/logo(27nov).jpeg'
+let logoPath = '/media/logo_27nov_-removebg-preview.png'
 // parent element
 
 let title = document.querySelector('title');
