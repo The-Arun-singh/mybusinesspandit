@@ -1,6 +1,6 @@
 // varibles
-let mobNum1 = '+91-8750144044';
-let mobNum2 = '+91-8700933923';
+let mobNum1 = '+91-9889887772';
+let mobNum2 = '+91-9889887773';
 let email = 'support@mybusinesspandit.com';
 let facebook = 'https://www.facebook.com/people/Mybusinesspanditcom/100088418073317/';
 let instagram = '';
@@ -167,7 +167,7 @@ body.insertAdjacentHTML("beforeend", `
         </div>
         <hr>
         <div class="copyright">
-            <p> All Rights Reserved. Copyright@2020-21. Powered by <a href="/index.html">MY BUSINESS PANDIT</a></p>
+            <p> All Rights Reserved. Copyright@2020-21. Powered by <a href="/index.html">my business pandit</a></p>
         </div>
     </footer>
 `); 

@@ -1,6 +1,6 @@
 /* body { 
     overflow-y: hidden;
-} */ 
+} */  
 a {
     color: #fff;
     text-decoration: none;
@@ -310,6 +310,35 @@ a {
     fill: #ffffff;
 }
 /* =========================================================== */
+
+/* ANIMATION */
+
+.sec{
+    position: relative;
+    animation: rise 33s ease-in 1sec 1;
+}
+@keyframes rise {
+    from {
+        top: 0;
+    }
+    to {
+        top:100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
