@@ -150,6 +150,9 @@ a {
     border: 0.1rem solid #fff;
     padding: 2rem 1rem;
 }
+.content > h2 {
+    text-align: center;
+}
 .content> h2, .content p {
     color: white;
     border-color: #fff;

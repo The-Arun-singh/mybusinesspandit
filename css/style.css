@@ -283,14 +283,19 @@ p {
 /* .faqs p {
     color: black;
 } */
+.ques-ans {
+    margin-left: 1rem;
+}
 details {
     margin: 1.5rem 0;
+    cursor: pointer;
 }
 details > summary {
     font-size: 1.3rem;
     list-style-position: outside;
     color: red;
 }
+
 details > p {
     margin: 1rem 0;
     font-size: 1.2rem;

@@ -20,11 +20,13 @@
     color: var(--color);
 }
 .intro, .advantages-list li, .types li, .min-requirements li {
+    list-style-type: decimal;
     list-style-position: inside;
-    color: #7A7A7A;
+    color: #000;
+    margin-left: 1rem;
 }
 .advantages-list h3 {
-    color: #515151;
+    color: #000;
 }
 /* ========================================= */
 
