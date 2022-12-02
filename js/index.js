@@ -1,3 +1,5 @@
+
+
 // varibles
 let mobNum1 = '+91-9889887772';
 let mobNum2 = '+91-9889887773';
@@ -11,6 +13,7 @@ let logoPath = '/media/logo_27nov_-removebg-preview.png'
 
 let title = document.querySelector('title');
 let body = document.querySelector('body');
+let article = document.querySelector('.article');
 
 // title 
 
@@ -124,6 +127,13 @@ body.insertAdjacentHTML("afterbegin", `
     </section>
 `);
 
+
+
+
+
+
+
+
 // add ftr html
 
 body.insertAdjacentHTML("beforeend", `
@@ -154,7 +164,7 @@ body.insertAdjacentHTML("beforeend", `
                 </div>
                 <div class="contact-footer">
                     <h3>contact</h3>
-                    <p>Mon - Sat (10AM-7PM) <br> +91-8750144044</p> <hr>
+                    <p>Mon - Sat (10AM-7PM) <br> ${mobNum1}</p> <hr>
                     <p>Send E-mail <br> <a href="mailto:${email}">${email}</a></p> <hr>
                     <p>Madra Khel, Anandpuram colony, Shahjahanpur, Uttar Pradesh, 242001</p>
                 </div>
@@ -171,3 +181,27 @@ body.insertAdjacentHTML("beforeend", `
         </div>
     </footer>
 `); 
+
+
+
+// enquire now 
+
+article.insertAdjacentHTML('beforeend', `
+    <aside class="aside">
+        <form class="enquire-now">
+            <h3>ENQUIRE NOW</h3>
+
+            <p>Please Fill This Form To <strong>Get Free Consultancy</strong> To Start Your Journey With Us</p>
+
+            <input type="text" placeholder="Name" name='Name' required>
+
+            <input type="email" placeholder="Email" name='email' required>
+
+            <input type="tel" placeholder="Number" name='number' minlength="10" maxlength="10" required>
+
+            <textarea name="message" id="message" cols="1" rows="3" placeholder="Message" minlength="250" required></textarea>
+
+            <button type="submit">ENQUIRE NOW</button>
+        </form>
+    </aside>
+`)
