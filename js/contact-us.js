@@ -1,8 +1,3 @@
-// let mobNum1 = '+91-8750144044';
-// let mobNum2 = '+91-8700933923';
-// let email = 'support@MYBUSINESSPANDIT.com';
-
-// let contactUs = document.querySelector('body>article');
 let header = document.querySelector('.header')
 
 header.insertAdjacentHTML('afterend', `
@@ -38,4 +33,4 @@ header.insertAdjacentHTML('afterend', `
             </form>
         </aside>
     </article>
-`); 
+`);  

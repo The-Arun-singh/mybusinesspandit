@@ -19,8 +19,6 @@ let article = document.querySelector('.article');
 
 title.innerText = "MY BUSINESS PANDIT";
 
-
-
 // write the innerhtml
 
 body.insertAdjacentHTML("afterbegin", `
@@ -204,4 +202,4 @@ article.insertAdjacentHTML('beforeend', `
             <button type="submit">ENQUIRE NOW</button>
         </form>
     </aside>
-`)
+`);

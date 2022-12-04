@@ -3,7 +3,7 @@
 
 let main = document.querySelector('#main');
 
-// insert the element 
+// insert the element  
 
 main.insertAdjacentHTML('beforeend', `
 <section class="enquiry">
