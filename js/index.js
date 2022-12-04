@@ -1,4 +1,12 @@
+// <!-- Google tag (gtag.js) -->
+{/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGYCSHP4JH"></script> */}
+// {/* <script> */}
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-CGYCSHP4JH');
+// {/* </script> */}
 
 // varibles
 let mobNum1 = '+91-9889887772';
