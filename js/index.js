@@ -5,14 +5,13 @@ let mobNum1 = '+91-9889887772';
 let mobNum2 = '+91-9889887773';
 let email = 'support@mybusinesspandit.com';
 let facebook = 'https://www.facebook.com/people/Mybusinesspanditcom/100088418073317/';
-let instagram = '';
+let instagram = 'https://www.instagram.com/mybusinesspandit/';
 let twitter = '';
 let youtube = '';
 let logoPath = '/media/logo_27nov_-removebg-preview.png'
 // parent element
 
 let title = document.querySelector('title');
-let body = document.querySelector('body');
 let article = document.querySelector('.article');
 
 // title 
@@ -21,7 +20,23 @@ title.innerText = "MY BUSINESS PANDIT";
 
 // write the innerhtml
 
-body.insertAdjacentHTML("afterbegin", `
+// Google Analytics code snippet
+const googleAnalytics = document.createElement('script');
+googleAnalytics.type = "text/javascript";
+googleAnalytics.async = true;
+googleAnalytics.src = "https://www.googletagmanager.com/gtag/js?id=G-CGYCSHP4JH";
+document.head.appendChild(googleAnalytics);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-CGYCSHP4JH');
+
+//
+
+
+document.body.insertAdjacentHTML("afterbegin", `
     <section class="header">
         
 
@@ -134,7 +149,7 @@ body.insertAdjacentHTML("afterbegin", `
 
 // add ftr html
 
-body.insertAdjacentHTML("beforeend", `
+document.body.insertAdjacentHTML("beforeend", `
     <footer>
         <div class="footer">
             <div class="left-footer">
